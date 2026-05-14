@@ -32,28 +32,29 @@ class StatsRepo(object):
 
     # TODO: generate the stats periodically in the background and save them in a separate collection
     # NOTE: we could use $facet in the aggregation as an alternative (no indexes though)
-    def get_stats(self, chat_id, month_ago=None):
+    def get_stats(self, chat_id, start_date=None):
         """
         :param chat_id: chat id
-        :param month_ago: time when the function is called, minus 30 days
+        :param start_date: time when the function is called, minus 30 days
         :return: dictionary
         """
         stats = {}
-        if month_ago is None:
-            month_ago = util.month_ago()
+        if start_date is None:
+            start_date = util.month_ago()
         pipe_30days = [
             {
                 '$match': {
                     'chat_id': chat_id,
                     'correct': False,
                     'date': {
-                        '$gt': month_ago
+                        '$gt': start_date
                     }
                 }
             },
             {'$group': {'_id': '$word', 'count': {'$sum': 1}}},
             {'$sort': {'count': -1}},
-            {'$limit': 5},
+            {'$match': {'count': {'$gt': 1}}},
+            {'$limit': 100},
             {'$lookup': {
                 'from': self._dictionary_col_name,
                 'localField': '_id',
