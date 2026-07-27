@@ -77,9 +77,20 @@ class Quiz(object):
         :param now: datetime for testing
         :return: review (overdue scores), in the same format as input dictionary
         """
-        # Strip TZ here vs add to the scores' dates
-        now = now or datetime.now(tz=timezone('UTC')).replace(tzinfo=None)
-        overdue = filter(lambda score: dictionary.has(score[0]) and score[1][1] and now > score[1][1], scores.items())
+        if now is None:
+            now = datetime.now(tz=timezone('UTC'))
+
+        def is_overdue(due_date):
+            if not due_date:
+                return False
+            dt_now = now
+            if dt_now.tzinfo and due_date.tzinfo is None:
+                due_date = due_date.replace(tzinfo=timezone('UTC'))
+            elif dt_now.tzinfo is None and due_date.tzinfo:
+                dt_now = dt_now.replace(tzinfo=timezone('UTC'))
+            return dt_now > due_date
+
+        overdue = filter(lambda score: dictionary.has(score[0]) and is_overdue(score[1][1]), scores.items())
         review = {k: v for _, (k, v) in zip(range(max_len), overdue)}
         log.debug("overdue scores count: %s", len(review))
         return review
@@ -142,7 +153,8 @@ class Quiz(object):
         :param now: current datetime, for testing
         :return: next review datetime for this score
         """
-        now = now or datetime.now(tz=timezone('UTC')).replace(tzinfo=None)
+        if now is None:
+            now = datetime.now(tz=timezone('UTC'))
         next_review_date = now + SCHEDULE[score_num]
         return next_review_date
 
