@@ -15,10 +15,10 @@ As an alternative,
 - Run `docker compose up` after the first two steps
 
 ## Deployment
-- Run `docker compose pull && docker compose up -d`
+- Run `docker compose build && docker compose up -d`
 
 ### Dictionary
-You'll need a db collection 'dictionary_v3', see the example in /dictionary.
+You'll need a database table 'dictionary_v3' in PostgreSQL. You can import the example dictionary using `python scripts/import_dictionary.py`.
 
 ## Notes
 
@@ -52,7 +52,7 @@ A correct answer increases the card's score by 1, while a mistake decreases its 
 - Webhooks instead of long polling ✔
 - Add Docker build/push actions to CI ✔
 - Randomize quiz time on 1st start ✔
-- Move DB to MongoDB Atlas ✔
+- Move DB to PostgreSQL 18-alpine & Django ORM/DRF ✔
 - i18n ✔
 - Revise the dictionary ✔
 - Add some tools for dictionary management

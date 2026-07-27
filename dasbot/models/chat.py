@@ -1,12 +1,11 @@
 import logging
-
 from datetime import datetime
 from pytz import timezone
 
-from marshmallow import Schema, fields, EXCLUDE, post_load
+from rest_framework import serializers
 
 from dasbot import util
-from dasbot.models.quiz import QuizMode, QuizSchema
+from dasbot.models.quiz import QuizMode, QuizSerializer
 from dasbot.models.dictionary import Level
 from dasbot.config import settings
 
@@ -17,7 +16,7 @@ class Chat(object):
     def __init__(self, chat_id, user={}, subscribed=True, last_seen=None, quiz=None,
                  quiz_scheduled_time=None, quiz_length=None, quiz_mode=None, hint_language=None, dictionary_level=None):
         self.id = chat_id
-        self.user = user # our User is just a dictionary so far
+        self.user = user
         self.subscribed = subscribed
         self.last_seen = last_seen
         self.quiz = quiz
@@ -48,34 +47,62 @@ class Chat(object):
         now = datetime.now().astimezone(berlin)
         self.quiz_scheduled_time = util.next_hhmm(hhmm, now, skip_today=skip_today)
 
-# TODO: Add Account object instead of current User dictionary
-class UserSchema(Schema):
-    class Meta:
-        unknown = EXCLUDE  # Skip unknown fields on deserialization
-    username = fields.String(load_default=None)
-    first_name = fields.String(load_default=None)
-    last_name = fields.String(load_default=None)
-    locale = fields.String(load_default=None)
-    last_used_locale = fields.String(load_default=None)
 
-class ChatSchema(Schema):
-    class Meta:
-        unknown = EXCLUDE  # Skip unknown fields on deserialization
-    chat_id = fields.Integer()
-    user = fields.Nested(UserSchema, load_default={})
-    subscribed = fields.Boolean(load_default=True)
-    last_seen = fields.Raw(load_default=None)  # Keep the raw datetime for Mongo
-    quiz = fields.Nested(QuizSchema, load_default=None)
-    quiz_scheduled_time = fields.Raw(load_default=None)  # Keep the raw datetime for Mongo
-    quiz_length = fields.Integer(load_default=None)
-    quiz_mode = fields.Enum(QuizMode, by_value=True, load_default=None)
-    hint_language = fields.String(load_default=None)
-    dictionary_level = fields.Enum(Level, by_value=True, load_default=None)
+class UserSerializer(serializers.Serializer):
+    username = serializers.CharField(required=False, allow_null=True, default=None)
+    first_name = serializers.CharField(required=False, allow_null=True, default=None)
+    last_name = serializers.CharField(required=False, allow_null=True, default=None)
+    locale = serializers.CharField(required=False, allow_null=True, default=None)
+    last_used_locale = serializers.CharField(required=False, allow_null=True, default=None)
 
-    @post_load
-    def get_chat(self, data, **kwargs):
-        return Chat(**data)
+    def to_internal_value(self, data):
+        known_fields = {field: data[field] for field in self.fields if field in data}
+        return super().to_internal_value(known_fields)
 
+
+class ChatSerializer(serializers.Serializer):
+    chat_id = serializers.IntegerField(source='id')
+    user = UserSerializer(required=False, default=dict)
+    subscribed = serializers.BooleanField(required=False, default=True)
+    last_seen = serializers.DateTimeField(required=False, allow_null=True, default=None)
+    quiz = QuizSerializer(required=False, allow_null=True, default=None)
+    quiz_scheduled_time = serializers.DateTimeField(required=False, allow_null=True, default=None)
+    quiz_length = serializers.IntegerField(required=False, allow_null=True, default=None)
+    quiz_mode = serializers.ChoiceField(choices=[m.value for m in QuizMode], required=False, allow_null=True, default=None)
+    hint_language = serializers.CharField(required=False, allow_null=True, default=None)
+    dictionary_level = serializers.ChoiceField(choices=[l.value for l in Level], required=False, allow_null=True, default=None)
+
+    def to_internal_value(self, data):
+        known_fields = {field: data[field] for field in self.fields if field in data}
+        return super().to_internal_value(known_fields)
+
+    def create(self, validated_data):
+        chat_id = validated_data.pop('id', None) or validated_data.pop('chat_id', None)
+        if 'quiz_mode' in validated_data and validated_data['quiz_mode']:
+            if not isinstance(validated_data['quiz_mode'], QuizMode):
+                validated_data['quiz_mode'] = QuizMode(validated_data['quiz_mode'])
+        if 'dictionary_level' in validated_data and validated_data['dictionary_level']:
+            if not isinstance(validated_data['dictionary_level'], Level):
+                validated_data['dictionary_level'] = Level.from_value(validated_data['dictionary_level'])
+        if 'quiz' in validated_data and isinstance(validated_data['quiz'], dict):
+            validated_data['quiz'] = QuizSerializer().create(validated_data['quiz'])
+        return Chat(chat_id=chat_id, **validated_data)
+
+    def update(self, instance, validated_data):
+        return self.create(validated_data)
+
+    def dump(self, instance):
+        return ChatSerializer(instance).data
+
+    def load(self, data, **kwargs):
+        serializer = ChatSerializer(data=data)
+        serializer.is_valid(raise_exception=True)
+        return serializer.save()
+
+
+# Backward compatibility aliases
+UserSchema = UserSerializer
+ChatSchema = ChatSerializer
 
 if __name__ == "__main__":
     pass

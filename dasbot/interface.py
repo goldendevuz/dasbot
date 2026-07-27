@@ -1,9 +1,15 @@
 import logging
 
 from aiogram import html
-from aiogram.types import KeyboardButton, ReplyKeyboardMarkup, ReplyKeyboardRemove
+from aiogram.types import InlineKeyboardMarkup
+from aiogram.utils.keyboard import InlineKeyboardBuilder
+from aiogram.filters.callback_data import CallbackData
 
 from dasbot.i18n import FLAGS, request_locale, t
+
+
+class QuizCallback(CallbackData, prefix="quiz"):
+    action: str
 
 
 log = logging.getLogger(__name__)
@@ -79,7 +85,14 @@ class Interface(object):
             total=chat.quiz.length,
             rate=self.rate(chat.quiz.correctly, chat.quiz.length),
         )
-        await self.bot.send_message(chat.id, text, reply_markup=ReplyKeyboardRemove(), disable_notification=True)
+        await self.bot.send_message(chat.id, text, reply_markup=self.result_kb(), disable_notification=True)
+
+    def result_kb(self) -> InlineKeyboardMarkup:
+        builder = InlineKeyboardBuilder()
+        builder.button(text="🔄 /start", callback_data=QuizCallback(action="start").pack())
+        builder.button(text="⚙️ /settings", callback_data=QuizCallback(action="settings").pack())
+        builder.adjust(2)
+        return builder.as_markup()
 
     def rate(self, correctly, total):
         grades = {
@@ -116,11 +129,14 @@ class Interface(object):
             text += "\n" + t("stats.mistakes") + wordlist("mistakes_30days")
         await message.answer(text)
 
-    def quiz_kb(self, chat) -> ReplyKeyboardMarkup:
+    def quiz_kb(self, chat) -> InlineKeyboardMarkup:
         labels = ("der", "die", "das", self.hint_button(chat))
-        buttons = [(KeyboardButton(text=text) for text in labels)]
-        keyboard = ReplyKeyboardMarkup(keyboard=buttons, resize_keyboard=True)
-        return keyboard
+        builder = InlineKeyboardBuilder()
+        for text in labels:
+            callback = QuizCallback(action=text).pack()
+            builder.button(text=text, callback_data=callback)
+        builder.adjust(4)
+        return builder.as_markup()
 
     def hint_button(self, chat):
         language = chat.hint_language or request_locale.get()

@@ -10,20 +10,26 @@ from aiogram.enums import ParseMode
 from aiogram.webhook.aiohttp_server import SimpleRequestHandler, setup_application
 from aiogram.client.default import DefaultBotProperties
 
+import os
+import django
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dasbot.django_settings")
+django.setup()
+
 from dasbot.config import settings
 from dasbot.middleware.i18n import I18nMiddleware
 from dasbot.db.database import Database
 from dasbot.db.dict_repo import DictRepo
 from dasbot.db.chats_repo import ChatsRepo
 from dasbot.db.stats_repo import StatsRepo
-from dasbot.interface import Interface
+from dasbot.interface import Interface, QuizCallback
 from dasbot.broadcaster import Broadcaster
 from dasbot.controller import Controller
 from dasbot.maintenance import Maintenance
 from dasbot.settings_controller import SettingsController, MenuCallback
 
-if settings.get("SENTRY_DSN"):
-    sentry_sdk.init(dsn=settings.SENTRY_DSN, enable_tracing=False)
+sentry_dsn = settings.get("SENTRY_DSN")
+if sentry_dsn and (sentry_dsn.startswith("http://") or sentry_dsn.startswith("https://")):
+    sentry_sdk.init(dsn=sentry_dsn, enable_tracing=False)
 
 logging.basicConfig(
     level=logging.DEBUG if settings.get("DEBUG") else logging.INFO,
@@ -32,8 +38,8 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-# PyMongo's debug level is annoying
-logging.getLogger("pymongo").setLevel(logging.INFO)
+# Django DB debug level is verbose
+logging.getLogger("django.db.backends").setLevel(logging.INFO)
 
 dp = Dispatcher()
 dp.message.middleware(I18nMiddleware())
@@ -85,6 +91,19 @@ async def forgetme_command(message: Message):
 async def settings_navigate(query: CallbackQuery, callback_data: MenuCallback):
     log.debug("callback query received: %s", query)
     await settingscon.navigate(query, callback_data)
+
+
+@dp.callback_query(QuizCallback.filter())
+async def quiz_navigate(query: CallbackQuery, callback_data: QuizCallback):
+    log.debug("quiz callback query received: %s, action: %s", query, callback_data.action)
+    if callback_data.action == "start":
+        await query.answer()
+        await chatcon.start(query.message)
+    elif callback_data.action == "settings":
+        await query.answer()
+        await settingscon.main(query.message)
+    else:
+        await chatcon.quiz_callback(query, callback_data)
 
 
 # generic message handler; should come last

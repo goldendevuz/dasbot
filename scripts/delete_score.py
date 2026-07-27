@@ -1,11 +1,11 @@
 import logging
 import sys
 
-sys.path.insert(0, "..")
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from dasbot.db.database import Database
 from dasbot.config import settings
-
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -14,11 +14,9 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-
 db = Database(settings).connect()
+ScoreModel = db["scores"]
 
-scores = db["scores"]
 query = {"word": "Pro"}
-
-log.info("Scores records: %s" % scores.count_documents(query))
-# scores.delete_many(query)
+log.info("Scores records: %s", ScoreModel.objects.filter(**query).count())
+# ScoreModel.objects.filter(**query).delete()

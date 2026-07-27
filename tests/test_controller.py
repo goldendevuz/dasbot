@@ -11,6 +11,7 @@ from dasbot.controller import Controller
 from dasbot.models.dictionary import Dictionary
 from dasbot.i18n import set_locale
 from dasbot.models.quiz import Quiz
+from dasbot.interface import QuizCallback
 
 
 class AnyStringWith(str):
@@ -165,3 +166,32 @@ class TestController(aiounittest.AsyncTestCase):
                     sys.modules[module_name] = original_module
                 elif module_name in sys.modules:
                     del sys.modules[module_name]
+
+    @patch("dasbot.controller.Interface")
+    async def test_quiz_callback_answer(self, mock_ui):
+        quiz = Quiz(
+            cards=[{"word": "Kartoffel", "articles": "die"}],
+            position=0,
+            correctly=0,
+            active=True,
+            scores={},
+        )
+        chat_mock = MagicMock(id=12345, quiz=quiz)
+        self.chats_repo.load_chat = MagicMock(return_value=chat_mock)
+        mock_ui.return_value.give_feedback = AsyncMock()
+        mock_ui.return_value.ask_question = AsyncMock()
+        mock_ui.return_value.announce_result = AsyncMock()
+
+        controller = Controller(
+            self.bot, self.chats_repo, self.stats_repo, self.dictionaries
+        )
+        controller.ui = mock_ui.return_value
+
+        query_mock = AsyncMock(message=AsyncMock())
+        callback_data = QuizCallback(action="die")
+
+        await controller.quiz_callback(query_mock, callback_data)
+
+        query_mock.answer.assert_called_once()
+        mock_ui.return_value.give_feedback.assert_called_once()
+        query_mock.message.edit_reply_markup.assert_called_once_with(reply_markup=None)

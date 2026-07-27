@@ -1,13 +1,16 @@
 import logging
-
 from enum import Enum
-from marshmallow import Schema, fields, EXCLUDE, post_load
+from rest_framework import serializers
 
 log = logging.getLogger(__name__)
 
 class Level(Enum):
     Default = 'default'
     A1 = 'a1'
+    A2 = 'a2'
+    B1 = 'b1'
+    B2 = 'b2'
+    C1 = 'c1'
 
     @classmethod
     def from_value(cls, value):
@@ -19,7 +22,7 @@ class Dictionary(object):
     Dictionary
 
     Args:
-        dict_data (dict): see DictionaryEntrySchema for structure }
+        dict_data (dict): see DictionaryEntrySerializer for structure }
     """
 
     def __init__(self, dict_data):
@@ -67,33 +70,48 @@ class Dictionary(object):
         """Returns True if word is in dictionary"""
         return self._contents.get(word) is not None
 
-class DictionaryEntrySchema(Schema):
-    class Meta:
-        unknown = EXCLUDE  # Skips unknown fields on deserialization
 
-    word = fields.String()
-    display_as = fields.String()
-    articles = fields.String()
-    frequency = fields.Float()
-    level = fields.String()
-    note = fields.String()
-    translation = fields.Dict(keys=fields.String(), values=fields.String())
-    example = fields.String()
+class DictionaryEntrySerializer(serializers.Serializer):
+    word = serializers.CharField()
+    display_as = serializers.CharField(required=False, allow_null=True, allow_blank=True, default=None)
+    articles = serializers.CharField()
+    frequency = serializers.FloatField(required=False, allow_null=True, default=None)
+    level = serializers.CharField(required=False, allow_null=True, allow_blank=True, default=None)
+    note = serializers.CharField(required=False, allow_null=True, allow_blank=True, default=None)
+    translation = serializers.DictField(child=serializers.CharField(allow_null=True, allow_blank=True), required=False, allow_null=True, default=None)
+    example = serializers.CharField(required=False, allow_null=True, allow_blank=True, default=None)
 
-    @post_load
-    def make_entry(self, data, **kwargs):
+    def to_internal_value(self, data):
+        known_fields = {field: data[field] for field in self.fields if field in data}
+        return super().to_internal_value(known_fields)
+
+    def create(self, validated_data):
         return {
-            data["word"]: {
-                "articles": data["articles"],
-                "display_as": data.get("display_as"),
-                "level": data.get("level"),
-                "frequency": data.get("frequency"),
-                "note": data.get("note"),
-                "translation": data.get("translation"),
-                "example": data.get("example"),
+            validated_data["word"]: {
+                "articles": validated_data["articles"],
+                "display_as": validated_data.get("display_as"),
+                "level": validated_data.get("level"),
+                "frequency": validated_data.get("frequency"),
+                "note": validated_data.get("note"),
+                "translation": validated_data.get("translation"),
+                "example": validated_data.get("example"),
             }
         }
 
+    def update(self, instance, validated_data):
+        return self.create(validated_data)
+
+    def dump(self, instance):
+        return DictionaryEntrySerializer(instance).data
+
+    def load(self, data, **kwargs):
+        serializer = DictionaryEntrySerializer(data=data)
+        serializer.is_valid(raise_exception=True)
+        return serializer.save()
+
+
+# Backward compatibility alias
+DictionaryEntrySchema = DictionaryEntrySerializer
 
 if __name__ == "__main__":
     pass

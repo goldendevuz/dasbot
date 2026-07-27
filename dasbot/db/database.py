@@ -1,7 +1,8 @@
+import os
 import logging
-
-from pymongo import MongoClient
-from urllib.parse import urlparse, quote_plus, urlunparse
+import django
+from django.core.management import call_command
+from django.db import connection
 
 log = logging.getLogger(__name__)
 
@@ -9,32 +10,49 @@ log = logging.getLogger(__name__)
 class Database(object):
     def __init__(self, settings):
         self.settings = settings
+        self._models = {}
 
     def url(self):
-        db_address = self.settings.DB_ADDRESS
-        username = self.settings.get("DB_USERNAME")
-        password = self.settings.get("DB_PASSWORD")
-        if not (username and password):
-            return db_address
-
-        parsed_url = urlparse(db_address)
-        netloc = parsed_url.netloc
-        creds = ":".join(
-            [
-                quote_plus(username),
-                quote_plus(password),
-            ]
-        )
-        netloc = "@".join([creds, netloc])
-        return urlunparse(parsed_url._replace(netloc=netloc))
+        return self.settings.get("DB_ADDRESS", "postgresql://dasbot:dasbot@127.0.0.1:5432/dasbot")
 
     def connect(self):
-        log.info("Connecting to database: %s", self.settings.DB_ADDRESS)
-        client = MongoClient(self.url())
-        db = client[self.settings.DB_NAME]
-        # db.command('profile', 2, filter={'op': 'query'}) # not supported on Atlas free tier
+        log.info("Connecting to database and initializing Django ORM: %s", self.url())
+        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dasbot.django_settings")
+        django.setup()
 
-        return db
+        # Automatically apply migrations / create tables
+        log.info("Running database schema check / migrations...")
+        try:
+            call_command("migrate", interactive=False, run_syncdb=True)
+        except Exception as err:
+            log.warning("Migration warning or error: %s", err)
+
+        from dasbot.models.db_models import ChatModel, ScoreModel, StatModel, DictionaryModel
+        from django.db import connection
+
+        table_names = connection.introspection.table_names()
+        for model in [ChatModel, ScoreModel, StatModel, DictionaryModel]:
+            if model._meta.db_table not in table_names:
+                try:
+                    with connection.schema_editor() as schema_editor:
+                        schema_editor.create_model(model)
+                    table_names.append(model._meta.db_table)
+                except Exception as err:
+                    log.warning("Could not create model %s: %s", model, err)
+
+        self._models = {
+            "chats": ChatModel,
+            "scores": ScoreModel,
+            "stats": StatModel,
+            "dictionary_v3": DictionaryModel,
+        }
+        return self
+
+    def __getitem__(self, key):
+        return self._models[key]
+
+    def __contains__(self, key):
+        return key in self._models
 
 
 if __name__ == "__main__":

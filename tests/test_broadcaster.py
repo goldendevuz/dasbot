@@ -1,15 +1,19 @@
+import os
 import logging
-
 import unittest
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from unittest.mock import MagicMock
-
 import aiounittest
-import mongomock
 from aiogram.exceptions import TelegramAPIError
 from aiogram.methods import SendMessage
 
+os.environ["ENV_FOR_DYNACONF"] = "test"
+from dasbot.config import settings
+from dasbot.db.database import Database
+Database(settings).connect()
+
+from dasbot.models.db_models import ChatModel, ScoreModel
 from dasbot.db.chats_repo import ChatsRepo
 from dasbot.models.chat import Chat, ChatSchema
 from dasbot.models.dictionary import Dictionary, Level
@@ -29,8 +33,11 @@ class TestBroadcaster(aiounittest.AsyncTestCase):
         raise TelegramAPIError(method=SendMessage, message="foobar")
 
     def setUp(self):
-        self.chats_collection = mongomock.MongoClient(tz_aware=True).db.collection
-        self.scores_collection = mongomock.MongoClient(tz_aware=True).db.collection
+        Database(settings).connect()
+        ChatModel.objects.all().delete()
+        ScoreModel.objects.all().delete()
+        self.chats_collection = ChatModel
+        self.scores_collection = ScoreModel
         chats_repo = ChatsRepo(self.chats_collection, self.scores_collection)
         self.ui_mock = MagicMock()
         self.dictionaries = defaultdict(
@@ -55,9 +62,20 @@ class TestBroadcaster(aiounittest.AsyncTestCase):
         chat = Chat(chat_id=1001, quiz_scheduled_time=current_quiz_time)
         result = await self.broadcaster.send_quiz(chat)
 
-        saved_chat = ChatSchema().load(
-            self.chats_collection.find_one({"chat_id": 1001})
-        )
+        chat_model = self.chats_collection.objects.filter(chat_id=1001).first()
+        chat_data = {
+            "chat_id": chat_model.chat_id,
+            "user": chat_model.user_data or {},
+            "subscribed": chat_model.subscribed,
+            "last_seen": chat_model.last_seen,
+            "quiz": chat_model.quiz,
+            "quiz_scheduled_time": chat_model.quiz_scheduled_time,
+            "quiz_length": chat_model.quiz_length,
+            "quiz_mode": chat_model.quiz_mode,
+            "hint_language": chat_model.hint_language,
+            "dictionary_level": chat_model.dictionary_level,
+        }
+        saved_chat = ChatSchema().load(chat_data)
         self.assertEqual(1, saved_chat.quiz.pos)
         self.assertEqual(expected_next_quiz_time, saved_chat.quiz_scheduled_time)
         self.assertTrue(result)

@@ -3,14 +3,14 @@
 
 import logging
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
+from django.db.models import F
 
-
-sys.path.insert(0, "..")
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from dasbot.config import settings
 from dasbot.db.database import Database
-
 
 logging.basicConfig(
     level=logging.INFO,
@@ -19,16 +19,12 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-
 db = Database(settings).connect()
-chats = db["chats"]
+ChatModel = db["chats"]
 now = datetime.now(tz=timezone.utc)
 
-query = {"subscribed": True, "quiz_scheduled_time": {"$lte": now}}
-log.info(f"Pending: {chats.count_documents(query)}")
+pending_chats = ChatModel.objects.filter(subscribed=True, quiz_scheduled_time__lte=now)
+log.info(f"Pending: {pending_chats.count()}")
 
-update = [
-    {"$set": {"quiz_scheduled_time": {"$add": ["$quiz_scheduled_time", 24 * 60 * 60 * 1000]}}}
-]
-result = chats.update_many(query, update)
-log.info(f"Updated {result.modified_count} records")
+updated_count = pending_chats.update(quiz_scheduled_time=F("quiz_scheduled_time") + timedelta(days=1))
+log.info(f"Updated {updated_count} records")

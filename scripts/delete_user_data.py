@@ -1,11 +1,11 @@
 import logging
 import sys
 
-sys.path.insert(0, "..")
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from dasbot.db.database import Database
 from dasbot.config import settings
-
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -14,16 +14,13 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-
 chat_id = 0  # telegram chat_id
 db = Database(settings).connect()
+ScoreModel = db["scores"]
+StatModel = db["stats"]
 
-scores = db["scores"]
-query = {"chat_id": chat_id}
-log.info("Scores records count: %s" % scores.count_documents(query))
-# scores.delete_many(query)
+log.info("Scores records count: %s", ScoreModel.objects.filter(chat_id=chat_id).count())
+# ScoreModel.objects.filter(chat_id=chat_id).delete()
 
-stats = db["stats"]
-query = {"chat_id": chat_id}
-log.info("Stats records count: %s" % stats.count_documents(query))
-# stats.delete_many(query)
+log.info("Stats records count: %s", StatModel.objects.filter(chat_id=chat_id).count())
+# StatModel.objects.filter(chat_id=chat_id).delete()

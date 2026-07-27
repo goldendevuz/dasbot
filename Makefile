@@ -2,10 +2,10 @@
 VENV_NAME=.venv
 
 db:
-	docker start mongo
+	docker start postgres
 
 db-stop:
-	docker stop mongo
+	docker stop postgres
 
 run:
 	. ${VENV_NAME}/bin/activate && watchmedo auto-restart --recursive --patterns="*.py;*.yml" --directory="." python dasbot.py

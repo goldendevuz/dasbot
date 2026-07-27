@@ -3,13 +3,13 @@ import logging
 import asyncio
 
 from aiogram import Bot
-from aiogram.types import Message
+from aiogram.types import Message, CallbackQuery
 
 from dasbot.types import Dictionaries
 from dasbot.db.chats_repo import ChatsRepo
 from dasbot.db.stats_repo import StatsRepo
 from dasbot.models.quiz import Quiz
-from dasbot.interface import Interface
+from dasbot.interface import Interface, QuizCallback
 from dasbot.analytics import tracker
 from dasbot.ads import ads
 
@@ -92,6 +92,46 @@ class Controller(object):
             )
             # Alternatively, we could send the ad hook inline with a short timeout
             # Can't use await since a timeout would block saving the chat
+            asyncio.create_task(ads.send(chat.id, chat.user["last_used_locale"]))
+
+        self.chats_repo.save_chat(chat, update_last_seen=True)
+
+    async def quiz_callback(self, query: CallbackQuery, callback_data: QuizCallback):
+        await query.answer()
+        answer = callback_data.action.strip().lower()
+        chat = self.chats_repo.load_chat(query.message)
+        dictionary = self.dictionaries[chat.dictionary_level]
+        quiz = chat.quiz
+
+        if quiz and quiz.active and answer in self.ui.hint_commands():
+            return await self.ui.give_hint(quiz, query.message, answer, dictionary)
+        if not (quiz and quiz.expected(answer)):
+            try:
+                await query.message.edit_reply_markup(reply_markup=None)
+            except Exception:
+                pass
+            return await self.ui.help(query.message)
+
+        try:
+            await query.message.edit_reply_markup(reply_markup=None)
+        except Exception:
+            pass
+
+        result = chat.quiz.verify_and_update_score(answer)
+        await self.ui.give_feedback(chat, query.message, result, dictionary)
+        self.chats_repo.save_score(chat, quiz.question, quiz.score)
+        self.stats_repo.save_stats(chat, quiz.question, result)
+        quiz.advance()
+        if quiz.has_questions:
+            await self.ui.ask_question(chat, dictionary)
+        else:
+            await self.ui.announce_result(chat)
+            quiz.stop()
+            tracker.capture(
+                "quiz completed",
+                distinct_id=str(chat.id),
+                properties={"locale": chat.user["last_used_locale"]},
+            )
             asyncio.create_task(ads.send(chat.id, chat.user["last_used_locale"]))
 
         self.chats_repo.save_chat(chat, update_last_seen=True)

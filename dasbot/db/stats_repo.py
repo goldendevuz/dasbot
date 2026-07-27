@@ -1,12 +1,16 @@
 import logging
-
-from datetime import datetime
-from datetime import timezone
+from datetime import datetime, timezone
+from django.db.models import Count
 
 from dasbot.models.chat import Chat
 from dasbot import util
 
 log = logging.getLogger(__name__)
+
+
+class DeleteResult:
+    def __init__(self, count):
+        self.deleted_count = count
 
 
 class StatsRepo(object):
@@ -17,7 +21,10 @@ class StatsRepo(object):
         self.__status()
 
     def __status(self):
-        log.info("%s answer(s) in DB" % self._stats.count_documents({}))
+        try:
+            log.info("%s answer(s) in DB" % self._stats.objects.count())
+        except AttributeError:
+            pass
 
     def save_stats(self, chat: Chat, word, result: bool):
         """
@@ -25,13 +32,14 @@ class StatsRepo(object):
         :param word: word to save the result for
         :param result: last answer correct?
         """
-        update = {"chat_id": chat.id, "word": word,
-                  "correct": result, "date": datetime.now(tz=timezone.utc)}
-        result = self._stats.insert_one(update)
-        return result
+        obj = self._stats.objects.create(
+            chat_id=chat.id,
+            word=word,
+            correct=result,
+            date=datetime.now(tz=timezone.utc)
+        )
+        return obj
 
-    # TODO: generate the stats periodically in the background and save them in a separate collection
-    # NOTE: we could use $facet in the aggregation as an alternative (no indexes though)
     def get_stats(self, chat_id, start_date=None):
         """
         :param chat_id: chat id
@@ -41,57 +49,44 @@ class StatsRepo(object):
         stats = {}
         if start_date is None:
             start_date = util.month_ago()
-        pipe_30days = [
-            {
-                '$match': {
-                    'chat_id': chat_id,
-                    'correct': False,
-                    'date': {
-                        '$gt': start_date
-                    }
-                }
-            },
-            {'$group': {'_id': '$word', 'count': {'$sum': 1}}},
-            {'$sort': {'count': -1}},
-            {'$match': {'count': {'$gt': 1}}},
-            {'$limit': 100},
-            {'$lookup': {
-                'from': self._dictionary_col_name,
-                'localField': '_id',
-                'foreignField': 'word',
-                'as': 'dictionaryEntry'
-            }},
-            {'$project': {
-                'articles': {'$ifNull': [{'$first': '$dictionaryEntry.articles'}, '?']},
-                'word': '$_id',
-                'count': 1,
-                '_id': 0
-            }}
-        ]
-        query_progress = {'chat_id': chat_id}
-        count = self._scores.count_documents(query_progress)
+
+        count = self._scores.objects.filter(chat_id=chat_id).count()
         stats['touched'] = count
-        results = self._stats.aggregate(pipe_30days)
-        stats['mistakes_30days'] = [item for item in results]
+
+        from dasbot.models.db_models import DictionaryModel
+
+        qs = (
+            self._stats.objects.filter(chat_id=chat_id, correct=False, date__gt=start_date)
+            .values("word")
+            .annotate(count=Count("word"))
+            .filter(count__gt=1)
+            .order_by("-count")[:100]
+        )
+
+        mistakes = []
+        for item in qs:
+            word = item["word"]
+            cnt = item["count"]
+            dict_entry = DictionaryModel.objects.filter(word=word).first()
+            articles = dict_entry.articles if dict_entry and dict_entry.articles else "?"
+            mistakes.append({"word": word, "count": cnt, "articles": articles})
+
+        stats['mistakes_30days'] = mistakes
         return stats
 
     def delete_old_stats(self, cutoff_time):
         """
         :param cutoff_time: delete stats records older than this
-        :return: PyMongo DeleteResult instance
         """
-        query = {'date': {'$lt': cutoff_time}}
-        result = self._stats.delete_many(query)
-        return result
+        deleted_count, _ = self._stats.objects.filter(date__lt=cutoff_time).delete()
+        return DeleteResult(deleted_count)
 
     def delete_stats(self, chat_id):
         """
         :param chat_id: chat id to delete stats for
-        :return: PyMongo DeleteResult instance
         """
-        query = {'chat_id': chat_id}
-        result = self._stats.delete_many(query)
-        return result
+        deleted_count, _ = self._stats.objects.filter(chat_id=chat_id).delete()
+        return DeleteResult(deleted_count)
 
 
 if __name__ == "__main__":

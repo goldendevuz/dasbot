@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import MagicMock
 
-from aiogram.types import ReplyKeyboardMarkup
+from aiogram.types import InlineKeyboardMarkup
 import aiounittest
 
 from dasbot.interface import Interface
@@ -24,7 +24,11 @@ class TestInterface(aiounittest.AsyncTestCase):
     def test_quiz_kb(self):
         chat = Chat(chat_id=1001)
         keyboard = self.ui.quiz_kb(chat)
-        self.assertIsInstance(keyboard, ReplyKeyboardMarkup)
+        self.assertIsInstance(keyboard, InlineKeyboardMarkup)
+
+    def test_result_kb(self):
+        keyboard = self.ui.result_kb()
+        self.assertIsInstance(keyboard, InlineKeyboardMarkup)
 
     def test_hint_button(self):
         chat = Chat(chat_id=1001, hint_language="en")

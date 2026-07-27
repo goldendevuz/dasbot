@@ -1,0 +1,3338 @@
+{
+  "Ansage": {
+    "articles": "die",
+    "display_as": "die Ansage, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "announcement",
+      "ru": "объявление"
+    },
+    "example": "Hören Sie auf die Ansagen.",
+    "note": ""
+  },
+  "Anschluss": {
+    "articles": "der",
+    "display_as": "der Anschluss",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "connection",
+      "ru": "соединение / подключение"
+    },
+    "example": "Ist das die Anmeldung für einen Telefonanschluss?",
+    "note": ""
+  },
+  "Antwort": {
+    "articles": "die",
+    "display_as": "die Antwort, -en",
+    "level": "B1",
+    "frequency": 9.4,
+    "translation": {
+      "en": "answer, reply",
+      "ru": "ответ"
+    },
+    "example": "Ich warte noch auf eine Antwort von der Behörde.",
+    "note": ""
+  },
+  "Anzeige": {
+    "articles": "die",
+    "display_as": "die Anzeige, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "advert",
+      "ru": "объявление"
+    },
+    "example": "Ich habe Ihre Anzeige in der Zeitung gelesen.",
+    "note": ""
+  },
+  "Apartment": {
+    "articles": "das",
+    "display_as": "das Apartment, -s",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "apartment",
+      "ru": "апартаменты / квартира"
+    },
+    "example": "Wir haben ein Apartment gemietet.",
+    "note": ""
+  },
+  "Apfel": {
+    "articles": "der",
+    "display_as": "der Apfel, -",
+    "level": "A1",
+    "frequency": 8.4,
+    "translation": {
+      "en": "apple",
+      "ru": "яблоко"
+    },
+    "example": "Ich esse jeden Tag einen Apfel.",
+    "note": ""
+  },
+  "Appetit": {
+    "articles": "der",
+    "display_as": "der Appetit",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "…",
+      "ru": "аппетит"
+    },
+    "example": "Guten Appetit!",
+    "note": ""
+  },
+  "Arbeit": {
+    "articles": "die",
+    "display_as": "die Arbeit, -en",
+    "level": "A1",
+    "frequency": 9.3,
+    "translation": {
+      "en": "work, job",
+      "ru": "работа"
+    },
+    "example": "Sie geht jeden Tag zur Arbeit.",
+    "note": ""
+  },
+  "Arbeitsplatz": {
+    "articles": "der",
+    "display_as": "der Arbeitsplatz, -ä, e",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "workplace",
+      "ru": "рабочее место"
+    },
+    "example": "An meinem Arbeitsplatz fehlt ein Drucker.",
+    "note": ""
+  },
+  "Arm": {
+    "articles": "der",
+    "display_as": "der Arm, -e",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "arm",
+      "ru": "рука"
+    },
+    "example": "Mein Arm tut weh.",
+    "note": ""
+  },
+  "Arzt": {
+    "articles": "der",
+    "display_as": "der Arzt, -e",
+    "level": "A2",
+    "frequency": 8.8,
+    "translation": {
+      "en": "doctor, physician",
+      "ru": "врач"
+    },
+    "example": "Der Arzt verschreibt mir ein Medikament.",
+    "note": ""
+  },
+  "Aufgabe": {
+    "articles": "die",
+    "display_as": "die Aufgabe, -n",
+    "level": "B1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "task, assignment",
+      "ru": "задача, задание"
+    },
+    "example": "Das ist eine schwierige Aufgabe, aber wir schaffen das.",
+    "note": ""
+  },
+  "Aufzug": {
+    "articles": "der",
+    "display_as": "der Aufzug, -ü, e",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "lift",
+      "ru": "существительное (A1)"
+    },
+    "example": "In diesem Haus gibt es keinen Aufzug.",
+    "note": ""
+  },
+  "Auge": {
+    "articles": "das",
+    "display_as": "das Auge, -n",
+    "level": "A2",
+    "frequency": 9.2,
+    "translation": {
+      "en": "eye",
+      "ru": "глаз"
+    },
+    "example": "Er hat wunderschöne blaue Augen.",
+    "note": ""
+  },
+  "Ausflug": {
+    "articles": "der",
+    "display_as": "der Ausflug",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "excursion",
+      "ru": "экскурсия"
+    },
+    "example": "Morgen machen wir einen Ausflug nach Heidelberg.",
+    "note": ""
+  },
+  "Ausgang": {
+    "articles": "der",
+    "display_as": "der Ausgang",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "exit",
+      "ru": "выход"
+    },
+    "example": "Wo ist der Ausgang?",
+    "note": ""
+  },
+  "Auskunft": {
+    "articles": "die",
+    "display_as": "die Auskunft, -ü, e",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "information/details",
+      "ru": "справка / информация"
+    },
+    "example": "Können Sie mir eine Auskunft geben?",
+    "note": ""
+  },
+  "Ausland": {
+    "articles": "das",
+    "display_as": "das Ausland",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "abroad/overseas",
+      "ru": "заграница"
+    },
+    "example": "Fahren Sie ins Ausland?",
+    "note": ""
+  },
+  "Ausländer": {
+    "articles": "der",
+    "display_as": "der Ausländer, -",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "foreigner",
+      "ru": "иностранец"
+    },
+    "example": "Sind Sie Ausländerin?",
+    "note": ""
+  },
+  "Aussage": {
+    "articles": "die",
+    "display_as": "die Aussage, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "statement",
+      "ru": "высказывание"
+    },
+    "example": "Ist die Aussage richtig oder falsch?",
+    "note": ""
+  },
+  "Ausweis": {
+    "articles": "der",
+    "display_as": "der Ausweis",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "identity card",
+      "ru": "удостоверение личности"
+    },
+    "example": "Hier ist mein Ausweis.",
+    "note": ""
+  },
+  "Auto": {
+    "articles": "das",
+    "display_as": "das Auto, -s",
+    "level": "A1",
+    "frequency": 9.1,
+    "translation": {
+      "en": "car",
+      "ru": "автомобиль"
+    },
+    "example": "Sein neues Auto ist sehr schnell.",
+    "note": ""
+  },
+  "Autobahn": {
+    "articles": "die",
+    "display_as": "die Autobahn, -en",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "motorway",
+      "ru": "автомагистраль"
+    },
+    "example": "Wo geht‘s hier bitte zur Autobahn?",
+    "note": ""
+  },
+  "Automat": {
+    "articles": "der",
+    "display_as": "der Automat",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "machine",
+      "ru": "существительное (A1)"
+    },
+    "example": "Die Fahrkarten gibt es nur am Automaten.",
+    "note": ""
+  },
+  "Baby": {
+    "articles": "das",
+    "display_as": "das Baby, -s",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "baby",
+      "ru": "малыш"
+    },
+    "example": "Mein Kind ist noch ein Baby.",
+    "note": ""
+  },
+  "Bäckerei": {
+    "articles": "die",
+    "display_as": "die Bäckerei",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "bakery",
+      "ru": "булочная"
+    },
+    "example": "Ich geh mal schnell zur Bäckerei.",
+    "note": ""
+  },
+  "Bad": {
+    "articles": "das",
+    "display_as": "das Bad, -er",
+    "level": "A1",
+    "frequency": 8.4,
+    "translation": {
+      "en": "bathroom, bath",
+      "ru": "ванная"
+    },
+    "example": "Das Bad ist rechts am Gang.",
+    "note": ""
+  },
+  "Bahn": {
+    "articles": "die",
+    "display_as": "die Bahn",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "train",
+      "ru": "поезд / железная дорога"
+    },
+    "example": "Ich nehme die nächste Bahn.",
+    "note": ""
+  },
+  "Bahnhof": {
+    "articles": "der",
+    "display_as": "der Bahnhof, -e",
+    "level": "A1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "train station",
+      "ru": "вокзал"
+    },
+    "example": "Der Zug fährt gleich am Bahnhof ab.",
+    "note": ""
+  },
+  "Bahnsteig": {
+    "articles": "der",
+    "display_as": "der Bahnsteig",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "platform",
+      "ru": "перрон"
+    },
+    "example": "Auf welchem Bahnsteig fährt der Zug?",
+    "note": ""
+  },
+  "Balkon": {
+    "articles": "der",
+    "display_as": "der Balkon",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "balcony",
+      "ru": "балкон"
+    },
+    "example": "Die Wohnung hat auch einen kleinen Balkon.",
+    "note": ""
+  },
+  "Banane": {
+    "articles": "die",
+    "display_as": "die Banane, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "banana",
+      "ru": "банан"
+    },
+    "example": "Drei Bananen, bitte!",
+    "note": ""
+  },
+  "Bank": {
+    "articles": "die",
+    "display_as": "die Bank",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "bench",
+      "ru": "банк / скамейка"
+    },
+    "example": "Er sitzt im Park auf einer Bank und liest.",
+    "note": ""
+  },
+  "Bauch": {
+    "articles": "der",
+    "display_as": "der Bauch, -e",
+    "level": "A2",
+    "frequency": 8.4,
+    "translation": {
+      "en": "stomach, belly",
+      "ru": "живот"
+    },
+    "example": "Mein Bauch tut mir weh, ich habe zu viel gegessen.",
+    "note": ""
+  },
+  "Baum": {
+    "articles": "der",
+    "display_as": "der Baum, -e",
+    "level": "A2",
+    "frequency": 8.4,
+    "translation": {
+      "en": "tree",
+      "ru": "дерево"
+    },
+    "example": "Vor unserem Haus steht ein alter Baum.",
+    "note": ""
+  },
+  "Beamte": {
+    "articles": "der",
+    "display_as": "der Beamte, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "official",
+      "ru": "чиновник"
+    },
+    "example": "Fragen Sie die Beamtin an Schalter acht!",
+    "note": ""
+  },
+  "Bein": {
+    "articles": "das",
+    "display_as": "das Bein, -e",
+    "level": "A2",
+    "frequency": 8.7,
+    "translation": {
+      "en": "leg",
+      "ru": "нога"
+    },
+    "example": "Er hat sich beim Skifahren das Bein gebrochen.",
+    "note": ""
+  },
+  "Beispiel": {
+    "articles": "das",
+    "display_as": "das Beispiel, -e",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "example",
+      "ru": "пример"
+    },
+    "example": "Kannst du mir ein Beispiel sagen?",
+    "note": ""
+  },
+  "Beruf": {
+    "articles": "der",
+    "display_as": "der Beruf, -e",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "occupation",
+      "ru": "профессия"
+    },
+    "example": "Was ist Ihr Beruf?",
+    "note": ""
+  },
+  "Bett": {
+    "articles": "das",
+    "display_as": "das Bett, -en",
+    "level": "A1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "bed",
+      "ru": "кровать"
+    },
+    "example": "Ich gehe jetzt ins Bett.",
+    "note": ""
+  },
+  "Bier": {
+    "articles": "das",
+    "display_as": "das Bier",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "beer",
+      "ru": "пиво"
+    },
+    "example": "Noch ein Bier bitte.",
+    "note": ""
+  },
+  "Bild": {
+    "articles": "das",
+    "display_as": "das Bild, -er",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "picture",
+      "ru": "картина"
+    },
+    "example": "Hast du ein Bild von deinem Sohn?",
+    "note": ""
+  },
+  "Birne": {
+    "articles": "die",
+    "display_as": "die Birne, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "pear",
+      "ru": "груша"
+    },
+    "example": "Ein Kilo Birnen, bitte!",
+    "note": ""
+  },
+  "Bitte": {
+    "articles": "die",
+    "display_as": "die Bitte, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "request",
+      "ru": "просьба"
+    },
+    "example": "Ich habe noch eine Bitte.",
+    "note": ""
+  },
+  "Bleistift": {
+    "articles": "der",
+    "display_as": "der Bleistift, -e",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "pencil",
+      "ru": "карандаш"
+    },
+    "example": "Hast du einen Bleistift?",
+    "note": ""
+  },
+  "Blick": {
+    "articles": "der",
+    "display_as": "der Blick",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "view",
+      "ru": "взгляд / вид"
+    },
+    "example": "Von diesem Hotel hat man einen guten Blick auf den Rhein.",
+    "note": ""
+  },
+  "Blume": {
+    "articles": "die",
+    "display_as": "die Blume, -n",
+    "level": "A2",
+    "frequency": 8.2,
+    "translation": {
+      "en": "flower",
+      "ru": "цветок"
+    },
+    "example": "Ich schenke ihr zum Geburtstag Blumen.",
+    "note": ""
+  },
+  "Bogen": {
+    "articles": "der",
+    "display_as": "der Bogen",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "sheet",
+      "ru": "лист (бумаги)"
+    },
+    "example": "Schreiben Sie Ihre Lösungen bitte auf den Antwortbogen.",
+    "note": ""
+  },
+  "Brief": {
+    "articles": "der",
+    "display_as": "der Brief, -e",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "letter",
+      "ru": "письмо"
+    },
+    "example": "Haben Sie einen Brief für mich?",
+    "note": ""
+  },
+  "Briefmarke": {
+    "articles": "die",
+    "display_as": "die Briefmarke, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "(postage) stamp",
+      "ru": "почтовая марка"
+    },
+    "example": "Kaufst du bitte Briefmarken bei der Post.",
+    "note": ""
+  },
+  "Brot": {
+    "articles": "das",
+    "display_as": "das Brot, -e",
+    "level": "A1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "bread",
+      "ru": "хлеб"
+    },
+    "example": "Frisches Brot schmeckt am besten.",
+    "note": ""
+  },
+  "Brötchen": {
+    "articles": "das",
+    "display_as": "das Brötchen, –",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "bread roll",
+      "ru": "булочка"
+    },
+    "example": "Möchtest du Brötchen zum Frühstück?",
+    "note": ""
+  },
+  "Bruder": {
+    "articles": "der",
+    "display_as": "der Bruder, -ü",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "brother",
+      "ru": "брат"
+    },
+    "example": "Sein Bruder arbeitet auch hier.",
+    "note": ""
+  },
+  "Buch": {
+    "articles": "das",
+    "display_as": "das Buch, -er",
+    "level": "A1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "book",
+      "ru": "книга"
+    },
+    "example": "Sie liest ein interessantes Buch.",
+    "note": ""
+  },
+  "Wörterbuch": {
+    "articles": "das",
+    "display_as": "das Wörterbuch, -ü, er",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "dictionary",
+      "ru": "словарь"
+    },
+    "example": "In diesem Wörterbuch finden Sie mehr als 20.000 Wörter.",
+    "note": ""
+  },
+  "Buchstabe": {
+    "articles": "der",
+    "display_as": "der Buchstabe, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "letter (character)",
+      "ru": "буква"
+    },
+    "example": "Diesen Buchstaben gibt es in meiner Sprache nicht.",
+    "note": ""
+  },
+  "Bus": {
+    "articles": "der",
+    "display_as": "der Bus, -se",
+    "level": "A1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "bus",
+      "ru": "автобус"
+    },
+    "example": "Ich nehme den Bus zur Universität.",
+    "note": ""
+  },
+  "Butter": {
+    "articles": "die",
+    "display_as": "die Butter",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "butter",
+      "ru": "сливочное масло"
+    },
+    "example": "Für mich bitte ein Brötchen mit Butter und Käse.",
+    "note": ""
+  },
+  "Café": {
+    "articles": "das",
+    "display_as": "das Café, -s",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "cafe",
+      "ru": "кафе"
+    },
+    "example": "Sollen wir uns im Café treffen?",
+    "note": ""
+  },
+  "CD": {
+    "articles": "die",
+    "display_as": "die CD, -s",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "CD",
+      "ru": "компакт-диск"
+    },
+    "example": "Bring bitte deine Lieblings-CD mit.",
+    "note": ""
+  },
+  "Chef": {
+    "articles": "der",
+    "display_as": "der Chef",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "boss",
+      "ru": "начальник"
+    },
+    "example": "Wir haben eine neue Chefin.",
+    "note": ""
+  },
+  "Computer": {
+    "articles": "der",
+    "display_as": "der Computer, -",
+    "level": "B1",
+    "frequency": 9.0,
+    "translation": {
+      "en": "computer",
+      "ru": "компьютер"
+    },
+    "example": "Ohne Computer ist Büroarbeit heute undenkbar.",
+    "note": ""
+  },
+  "Dame": {
+    "articles": "die",
+    "display_as": "die Dame, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "lady",
+      "ru": "дама"
+    },
+    "example": "Sehr geehrte Damen und Herren!",
+    "note": ""
+  },
+  "Dank": {
+    "articles": "der",
+    "display_as": "der Dank",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "thanks",
+      "ru": "благодарность"
+    },
+    "example": "Herzlichen Dank!",
+    "note": ""
+  },
+  "Datum": {
+    "articles": "das",
+    "display_as": "das Datum",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "date",
+      "ru": "дата"
+    },
+    "example": "Bitte schreiben Sie noch das Datum auf das Formular.",
+    "note": ""
+  },
+  "Disco": {
+    "articles": "die",
+    "display_as": "die Disco",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "disco",
+      "ru": "существительное (A1)"
+    },
+    "example": "Heute abend gehen wir in die Disco tanzen.",
+    "note": ""
+  },
+  "Doktor": {
+    "articles": "der",
+    "display_as": "der Doktor",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "doctor",
+      "ru": "существительное (A1)"
+    },
+    "example": "Meine Tochter ist krank. Wir gehen zum Doktor.",
+    "note": ""
+  },
+  "Doppelzimmer": {
+    "articles": "das",
+    "display_as": "das Doppelzimmer",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "double room",
+      "ru": "существительное (A1)"
+    },
+    "example": "Wollen Sie ein Doppelzimmer oder ein Einzelzimmer?",
+    "note": ""
+  },
+  "Dorf": {
+    "articles": "das",
+    "display_as": "das Dorf, -er",
+    "level": "A1",
+    "frequency": 8.2,
+    "translation": {
+      "en": "village",
+      "ru": "деревня"
+    },
+    "example": "Meine Großeltern wohnen in einem kleinen Dorf.",
+    "note": ""
+  },
+  "Drucker": {
+    "articles": "der",
+    "display_as": "der Drucker, –",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "printer",
+      "ru": "принтер"
+    },
+    "example": "Mein Drucker ist kaputt.",
+    "note": ""
+  },
+  "Durchsage": {
+    "articles": "die",
+    "display_as": "die Durchsage, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "announcement",
+      "ru": "сообщение (по радио)"
+    },
+    "example": "Ich habe die Durchsage nicht verstanden.",
+    "note": ""
+  },
+  "Durst": {
+    "articles": "der",
+    "display_as": "der Durst",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "thirst",
+      "ru": "жажда"
+    },
+    "example": "Hast du etwas zu trinken? Ich habe großen Durst.",
+    "note": ""
+  },
+  "Dusche": {
+    "articles": "die",
+    "display_as": "die Dusche",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "shower",
+      "ru": "душ"
+    },
+    "example": "Unsere Wohnung hat nur eine Dusche.",
+    "note": ""
+  },
+  "Ecke": {
+    "articles": "die",
+    "display_as": "die Ecke, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "corner",
+      "ru": "угол"
+    },
+    "example": "An der nächsten Ecke links.",
+    "note": ""
+  },
+  "Ehefrau": {
+    "articles": "die",
+    "display_as": "die Ehefrau, -en",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "wife",
+      "ru": "жена"
+    },
+    "example": "Das ist meine (Ehe-) Frau.",
+    "note": ""
+  },
+  "Ehemann": {
+    "articles": "der",
+    "display_as": "der Ehemann, ä, er",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "husband",
+      "ru": "муж"
+    },
+    "example": "Das ist mein (Ehe-) Mann.",
+    "note": ""
+  },
+  "Ei": {
+    "articles": "das",
+    "display_as": "das Ei, -er",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "egg",
+      "ru": "яйцо"
+    },
+    "example": "Möchtest du ein Ei zum Frühstück?",
+    "note": ""
+  },
+  "Eingang": {
+    "articles": "der",
+    "display_as": "der Eingang",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "entrance",
+      "ru": "вход"
+    },
+    "example": "Der Eingang ist um die Ecke.",
+    "note": ""
+  },
+  "Einladung": {
+    "articles": "die",
+    "display_as": "die Einladung",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "invitation",
+      "ru": "приглашение"
+    },
+    "example": "Danke für die Einladung!",
+    "note": ""
+  },
+  "Eintritt": {
+    "articles": "der",
+    "display_as": "der Eintritt",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "entry",
+      "ru": "вход / доступ"
+    },
+    "example": "Der Preis für den Eintritt ist 5 Euro.",
+    "note": ""
+  },
+  "Einzelzimmer": {
+    "articles": "das",
+    "display_as": "das Einzelzimmer",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "single room",
+      "ru": "существительное (A1)"
+    },
+    "example": "Haben Sie noch ein Einzelzimmer?",
+    "note": ""
+  },
+  "Eltern (pl.)": {
+    "articles": "die",
+    "display_as": "die Eltern (pl.)",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "parents",
+      "ru": "существительное (A1)"
+    },
+    "example": "Meine Eltern leben in Spanien.",
+    "note": ""
+  },
+  "E-Mail": {
+    "articles": "die",
+    "display_as": "die E-Mail, -s",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "email",
+      "ru": "электронная почта"
+    },
+    "example": "Ich habe Ihre E-Mail nicht bekommen.",
+    "note": ""
+  },
+  "Empfänger": {
+    "articles": "der",
+    "display_as": "der Empfänger, –",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "recipient",
+      "ru": "получатель"
+    },
+    "example": "Auf dem Brief steht dein Name, also bist du der Empfänger.",
+    "note": ""
+  },
+  "Ende": {
+    "articles": "das",
+    "display_as": "das Ende",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "end",
+      "ru": "конец"
+    },
+    "example": "Er bekommt sein Geld am Ende des Monats.",
+    "note": ""
+  },
+  "Entschuldigung": {
+    "articles": "die",
+    "display_as": "die Entschuldigung",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "…",
+      "ru": "извинение"
+    },
+    "example": "Entschuldigung! / Bitte.",
+    "note": ""
+  },
+  "Ergebnis": {
+    "articles": "das",
+    "display_as": "das Ergebnis, -se",
+    "level": "B1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "result, outcome",
+      "ru": "результат"
+    },
+    "example": "Das Ergebnis des Experiments war überraschend.",
+    "note": ""
+  },
+  "Erwachsene": {
+    "articles": "der",
+    "display_as": "der Erwachsene, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "adult",
+      "ru": "взрослый(ая)"
+    },
+    "example": "Dieser Film ist nur für Erwachsene.",
+    "note": ""
+  },
+  "Essen": {
+    "articles": "das",
+    "display_as": "das Essen",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "food",
+      "ru": "еда"
+    },
+    "example": "Das Essen ist heute sehr gut.",
+    "note": ""
+  },
+  "Fahrer": {
+    "articles": "der",
+    "display_as": "der Fahrer",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "driver",
+      "ru": "водитель"
+    },
+    "example": "Bitte nicht mit dem Fahrer sprechen!",
+    "note": ""
+  },
+  "Fahrkarte": {
+    "articles": "die",
+    "display_as": "die Fahrkarte, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "(transport) ticket",
+      "ru": "билет"
+    },
+    "example": "Hast du schon eine Fahrkarte?",
+    "note": ""
+  },
+  "Fahrrad": {
+    "articles": "das",
+    "display_as": "das Fahrrad, -er",
+    "level": "A1",
+    "frequency": 8.6,
+    "translation": {
+      "en": "bicycle",
+      "ru": "велосипед"
+    },
+    "example": "Mit dem Fahrrad bin ich schnell am Ziel.",
+    "note": ""
+  },
+  "Familie": {
+    "articles": "die",
+    "display_as": "die Familie, -n",
+    "level": "A1",
+    "frequency": 9.0,
+    "translation": {
+      "en": "family",
+      "ru": "семья"
+    },
+    "example": "Meine Familie lebt in Berlin.",
+    "note": ""
+  },
+  "Familienname": {
+    "articles": "der",
+    "display_as": "der Familienname",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "surname",
+      "ru": "фамилия"
+    },
+    "example": "Meine Familiennamen sind García González.",
+    "note": ""
+  },
+  "Familienstand": {
+    "articles": "der",
+    "display_as": "der Familienstand",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "family/marital status",
+      "ru": "семейное положение"
+    },
+    "example": "Bei „Familienstand“ musst du „ledig“ ankreuzen.",
+    "note": ""
+  },
+  "Farbe": {
+    "articles": "die",
+    "display_as": "die Farbe, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "colour",
+      "ru": "цвет"
+    },
+    "example": "Die Farbe gefällt mir gut.",
+    "note": ""
+  },
+  "Fax": {
+    "articles": "das",
+    "display_as": "das Fax, -e",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "fax",
+      "ru": "факс"
+    },
+    "example": "Schicken Sie uns einfach ein Fax!",
+    "note": ""
+  },
+  "Feierabend": {
+    "articles": "der",
+    "display_as": "der Feierabend",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "end of work/home time",
+      "ru": "существительное (A1)"
+    },
+    "example": "Wir machen jetzt Feierabend.",
+    "note": ""
+  },
+  "Feiertag": {
+    "articles": "der",
+    "display_as": "der Feiertag",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "bank holiday",
+      "ru": "существительное (A1)"
+    },
+    "example": "Am Montag ist Feiertag.",
+    "note": ""
+  },
+  "Fehler": {
+    "articles": "der",
+    "display_as": "der Fehler, –",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "mistake",
+      "ru": "ошибка"
+    },
+    "example": "Diesen Fehler mache ich immer.",
+    "note": ""
+  },
+  "Feuer": {
+    "articles": "das",
+    "display_as": "das Feuer",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "fire / lighter",
+      "ru": "огонь"
+    },
+    "example": "Haben Sie Feuer?",
+    "note": ""
+  },
+  "Fieber": {
+    "articles": "das",
+    "display_as": "das Fieber",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "fever",
+      "ru": "температура / жар"
+    },
+    "example": "Mein Mann hat noch immer Fieber.",
+    "note": ""
+  },
+  "Film": {
+    "articles": "der",
+    "display_as": "der Film, -e",
+    "level": "B1",
+    "frequency": 9.0,
+    "translation": {
+      "en": "film, movie",
+      "ru": "фильм"
+    },
+    "example": "Der neue Film mit diesem Schauspieler ist sehr spannend.",
+    "note": ""
+  },
+  "Firma": {
+    "articles": "die",
+    "display_as": "die Firma",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "company",
+      "ru": "фирма"
+    },
+    "example": "Er arbeitet jetzt bei einer anderen Firma.",
+    "note": ""
+  },
+  "Fisch": {
+    "articles": "der",
+    "display_as": "der Fisch, -e",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "fish",
+      "ru": "рыба"
+    },
+    "example": "Ich esse gern Fisch. Fleisch mag ich nicht.",
+    "note": ""
+  },
+  "Flasche": {
+    "articles": "die",
+    "display_as": "die Flasche, -n",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "bottle",
+      "ru": "бутылка"
+    },
+    "example": "Eine Flasche Bier, bitte.",
+    "note": ""
+  },
+  "Fleisch": {
+    "articles": "das",
+    "display_as": "das Fleisch",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "meat",
+      "ru": "мясо"
+    },
+    "example": "Fleisch mag ich nicht.",
+    "note": ""
+  },
+  "Abflug": {
+    "articles": "der",
+    "display_as": "der Abflug",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "(flight) departure",
+      "ru": "вылет"
+    },
+    "example": "Der Abflug ist um 11.20 Uhr.",
+    "note": ""
+  },
+  "Flughafen": {
+    "articles": "der",
+    "display_as": "der Flughafen, -",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "airport",
+      "ru": "аэропорт"
+    },
+    "example": "Wir müssen pünktlich am Flughafen sein.",
+    "note": ""
+  },
+  "Flugzeug": {
+    "articles": "das",
+    "display_as": "das Flugzeug, -e",
+    "level": "A1",
+    "frequency": 8.4,
+    "translation": {
+      "en": "airplane",
+      "ru": "самолет"
+    },
+    "example": "Das Flugzeug fliegt nach München.",
+    "note": ""
+  },
+  "Formular": {
+    "articles": "das",
+    "display_as": "das Formular, -e",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "form",
+      "ru": "формуляр / бланк"
+    },
+    "example": "Sie müssen dieses Formular ausfüllen.",
+    "note": ""
+  },
+  "Foto": {
+    "articles": "das",
+    "display_as": "das Foto, -s",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "photograph",
+      "ru": "фотография"
+    },
+    "example": "Darf ich ein Foto machen?",
+    "note": ""
+  },
+  "Frage": {
+    "articles": "die",
+    "display_as": "die Frage, -n",
+    "level": "B1",
+    "frequency": 9.5,
+    "translation": {
+      "en": "question",
+      "ru": "вопрос"
+    },
+    "example": "Darf ich Ihnen eine kurze Frage stellen?",
+    "note": ""
+  },
+  "Frau": {
+    "articles": "die",
+    "display_as": "die Frau, -en",
+    "level": "A1",
+    "frequency": 9.7,
+    "translation": {
+      "en": "woman, wife, Mrs.",
+      "ru": "женщина, жена"
+    },
+    "example": "Die Frau liest eine Zeitung.",
+    "note": ""
+  },
+  "Frauen": {
+    "articles": "die",
+    "display_as": "die Frauen",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "women",
+      "ru": "существительное (A1)"
+    },
+    "example": "Hier arbeiten mehr Frauen als Männer.",
+    "note": ""
+  },
+  "Freizeit": {
+    "articles": "die",
+    "display_as": "die Freizeit",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "free time",
+      "ru": "свободное время"
+    },
+    "example": "In meiner Freizeit spiele ich oft Fußball.",
+    "note": ""
+  },
+  "Haus": {
+    "articles": "das",
+    "display_as": "das Haus, -er",
+    "level": "A1",
+    "frequency": 9.5,
+    "translation": {
+      "en": "house",
+      "ru": "дом"
+    },
+    "example": "Das ist ein schönes Haus.",
+    "note": ""
+  },
+  "Wasser": {
+    "articles": "das",
+    "display_as": "das Wasser",
+    "level": "A1",
+    "frequency": 9.3,
+    "translation": {
+      "en": "water",
+      "ru": "вода"
+    },
+    "example": "Ein Glas Wasser, bitte.",
+    "note": ""
+  },
+  "Tisch": {
+    "articles": "der",
+    "display_as": "der Tisch, -e",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "table",
+      "ru": "стол"
+    },
+    "example": "Das Essen steht auf dem Tisch.",
+    "note": ""
+  },
+  "Stuhl": {
+    "articles": "der",
+    "display_as": "der Stuhl, -e",
+    "level": "A1",
+    "frequency": 8.3,
+    "translation": {
+      "en": "chair",
+      "ru": "стул"
+    },
+    "example": "Der Stuhl ist sehr bequem.",
+    "note": ""
+  },
+  "Fenster": {
+    "articles": "das",
+    "display_as": "das Fenster, -",
+    "level": "A1",
+    "frequency": 8.4,
+    "translation": {
+      "en": "window",
+      "ru": "окно"
+    },
+    "example": "Bitte mach das Fenster zu.",
+    "note": ""
+  },
+  "Tür": {
+    "articles": "die",
+    "display_as": "die Tür, -en",
+    "level": "A1",
+    "frequency": 8.6,
+    "translation": {
+      "en": "door",
+      "ru": "дверь"
+    },
+    "example": "Wer steht an der Tür?",
+    "note": ""
+  },
+  "Hund": {
+    "articles": "der",
+    "display_as": "der Hund, -e",
+    "level": "A1",
+    "frequency": 8.2,
+    "translation": {
+      "en": "dog",
+      "ru": "собака"
+    },
+    "example": "Der Hund bellt laut.",
+    "note": ""
+  },
+  "Katze": {
+    "articles": "die",
+    "display_as": "die Katze, -n",
+    "level": "A1",
+    "frequency": 8.1,
+    "translation": {
+      "en": "cat",
+      "ru": "кошка"
+    },
+    "example": "Die Katze schläft auf dem Sofa.",
+    "note": ""
+  },
+  "Zeit": {
+    "articles": "die",
+    "display_as": "die Zeit, -en",
+    "level": "A1",
+    "frequency": 9.8,
+    "translation": {
+      "en": "time",
+      "ru": "время"
+    },
+    "example": "Ich habe heute keine Zeit.",
+    "note": ""
+  },
+  "Jahr": {
+    "articles": "das",
+    "display_as": "das Jahr, -e",
+    "level": "A1",
+    "frequency": 9.7,
+    "translation": {
+      "en": "year",
+      "ru": "год"
+    },
+    "example": "Ein Jahr hat zwölf Monate.",
+    "note": ""
+  },
+  "Tag": {
+    "articles": "der",
+    "display_as": "der Tag, -e",
+    "level": "A1",
+    "frequency": 9.6,
+    "translation": {
+      "en": "day",
+      "ru": "день"
+    },
+    "example": "Heute ist ein schöner Tag.",
+    "note": ""
+  },
+  "Nacht": {
+    "articles": "die",
+    "display_as": "die Nacht, -e",
+    "level": "A1",
+    "frequency": 9.1,
+    "translation": {
+      "en": "night",
+      "ru": "ночь"
+    },
+    "example": "In der Nacht ist es dunkel.",
+    "note": ""
+  },
+  "Morgen": {
+    "articles": "der",
+    "display_as": "der Morgen, -",
+    "level": "A1",
+    "frequency": 9.3,
+    "translation": {
+      "en": "morning",
+      "ru": "утро"
+    },
+    "example": "Guten Morgen, wie geht es dir?",
+    "note": ""
+  },
+  "Abend": {
+    "articles": "der",
+    "display_as": "der Abend, -e",
+    "level": "A1",
+    "frequency": 9.2,
+    "translation": {
+      "en": "evening",
+      "ru": "вечер"
+    },
+    "example": "Wir treffen uns am Abend.",
+    "note": ""
+  },
+  "Woche": {
+    "articles": "die",
+    "display_as": "die Woche, -n",
+    "level": "A1",
+    "frequency": 9.0,
+    "translation": {
+      "en": "week",
+      "ru": "неделя"
+    },
+    "example": "Nächste Woche fahren wir in den Urlaub.",
+    "note": ""
+  },
+  "Monat": {
+    "articles": "der",
+    "display_as": "der Monat, -e",
+    "level": "A1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "month",
+      "ru": "месяц"
+    },
+    "example": "Der Januar ist der erste Monat im Jahr.",
+    "note": ""
+  },
+  "Geld": {
+    "articles": "das",
+    "display_as": "das Geld",
+    "level": "A1",
+    "frequency": 9.4,
+    "translation": {
+      "en": "money",
+      "ru": "деньги"
+    },
+    "example": "Kannst du mir etwas Geld leihen?",
+    "note": ""
+  },
+  "Schule": {
+    "articles": "die",
+    "display_as": "die Schule, -n",
+    "level": "A1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "school",
+      "ru": "школа"
+    },
+    "example": "Die Kinder lernen in der Schule.",
+    "note": ""
+  },
+  "Lehrer": {
+    "articles": "der",
+    "display_as": "der Lehrer, -",
+    "level": "A1",
+    "frequency": 8.4,
+    "translation": {
+      "en": "teacher (male)",
+      "ru": "учитель"
+    },
+    "example": "Der Lehrer erklärt die Grammatik.",
+    "note": ""
+  },
+  "Schüler": {
+    "articles": "der",
+    "display_as": "der Schüler, -",
+    "level": "A1",
+    "frequency": 8.3,
+    "translation": {
+      "en": "student, pupil",
+      "ru": "ученик"
+    },
+    "example": "Der Schüler schreibt an die Tafel.",
+    "note": ""
+  },
+  "Freund": {
+    "articles": "der",
+    "display_as": "der Freund, -e",
+    "level": "A1",
+    "frequency": 9.0,
+    "translation": {
+      "en": "friend (male)",
+      "ru": "друг"
+    },
+    "example": "Er ist mein bester Freund.",
+    "note": ""
+  },
+  "Freundin": {
+    "articles": "die",
+    "display_as": "die Freundin, -nen",
+    "level": "A1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "friend (female)",
+      "ru": "подруга"
+    },
+    "example": "Sie trifft sich mit ihrer Freundin.",
+    "note": ""
+  },
+  "Mutter": {
+    "articles": "die",
+    "display_as": "die Mutter, -",
+    "level": "A1",
+    "frequency": 9.5,
+    "translation": {
+      "en": "mother",
+      "ru": "мать"
+    },
+    "example": "Meine Mutter kocht sehr gut.",
+    "note": ""
+  },
+  "Vater": {
+    "articles": "der",
+    "display_as": "der Vater, -",
+    "level": "A1",
+    "frequency": 9.5,
+    "translation": {
+      "en": "father",
+      "ru": "отец"
+    },
+    "example": "Mein Vater arbeitet im Garten.",
+    "note": ""
+  },
+  "Kind": {
+    "articles": "das",
+    "display_as": "das Kind, -er",
+    "level": "A1",
+    "frequency": 9.6,
+    "translation": {
+      "en": "child",
+      "ru": "ребенок"
+    },
+    "example": "Das Kind spielt mit dem Ball.",
+    "note": ""
+  },
+  "Mann": {
+    "articles": "der",
+    "display_as": "der Mann, -er",
+    "level": "A1",
+    "frequency": 9.7,
+    "translation": {
+      "en": "man, husband",
+      "ru": "мужчина, муж"
+    },
+    "example": "Der Mann wartet auf den Bus.",
+    "note": ""
+  },
+  "Mädchen": {
+    "articles": "das",
+    "display_as": "das Mädchen, -",
+    "level": "A1",
+    "frequency": 8.7,
+    "translation": {
+      "en": "girl",
+      "ru": "девочка"
+    },
+    "example": "Das Mädchen singt ein Lied.",
+    "note": ""
+  },
+  "Junge": {
+    "articles": "der",
+    "display_as": "der Junge, -n",
+    "level": "A1",
+    "frequency": 8.6,
+    "translation": {
+      "en": "boy",
+      "ru": "мальчик"
+    },
+    "example": "Der Junge fahrt Fahrrad.",
+    "note": ""
+  },
+  "Milch": {
+    "articles": "die",
+    "display_as": "die Milch",
+    "level": "A1",
+    "frequency": 8.7,
+    "translation": {
+      "en": "milk",
+      "ru": "молоко"
+    },
+    "example": "Kaffee mit Milch und Zucker.",
+    "note": ""
+  },
+  "Kaffee": {
+    "articles": "der",
+    "display_as": "der Kaffee, -s",
+    "level": "A1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "coffee",
+      "ru": "кофе"
+    },
+    "example": "Ich trinke morgens immer Kaffee.",
+    "note": ""
+  },
+  "Tee": {
+    "articles": "der",
+    "display_as": "der Tee, -s",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "tea",
+      "ru": "чай"
+    },
+    "example": "Möchtest du eine Tasse Tee?",
+    "note": ""
+  },
+  "Zimmer": {
+    "articles": "das",
+    "display_as": "das Zimmer, -",
+    "level": "A1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "room",
+      "ru": "комната"
+    },
+    "example": "Das Hotelzimmer ist sehr sauber.",
+    "note": ""
+  },
+  "Küche": {
+    "articles": "die",
+    "display_as": "die Küche, -n",
+    "level": "A1",
+    "frequency": 8.7,
+    "translation": {
+      "en": "kitchen",
+      "ru": "кухня"
+    },
+    "example": "Wir essen in der Küche.",
+    "note": ""
+  },
+  "Garten": {
+    "articles": "der",
+    "display_as": "der Garten, -",
+    "level": "A1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "garden",
+      "ru": "сад"
+    },
+    "example": "Im Garten blühen viele Blumen.",
+    "note": ""
+  },
+  "Zug": {
+    "articles": "der",
+    "display_as": "der Zug, -e",
+    "level": "A1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "train",
+      "ru": "поезд"
+    },
+    "example": "Der Zug hat heute zehn Minuten Verspätung.",
+    "note": ""
+  },
+  "Straße": {
+    "articles": "die",
+    "display_as": "die Straße, -n",
+    "level": "A1",
+    "frequency": 9.1,
+    "translation": {
+      "en": "street, road",
+      "ru": "улица, дорога"
+    },
+    "example": "Die Straße ist wegen Bauarbeiten gesperrt.",
+    "note": ""
+  },
+  "Weg": {
+    "articles": "der",
+    "display_as": "der Weg, -e",
+    "level": "A1",
+    "frequency": 9.2,
+    "translation": {
+      "en": "path, way",
+      "ru": "путь, дорога"
+    },
+    "example": "Kannst du mir den Weg zeigen?",
+    "note": ""
+  },
+  "Stadt": {
+    "articles": "die",
+    "display_as": "die Stadt, -e",
+    "level": "A1",
+    "frequency": 9.3,
+    "translation": {
+      "en": "city, town",
+      "ru": "город"
+    },
+    "example": "Hamburg ist eine schöne Stadt.",
+    "note": ""
+  },
+  "Land": {
+    "articles": "das",
+    "display_as": "das Land, -er",
+    "level": "A1",
+    "frequency": 9.2,
+    "translation": {
+      "en": "country, land",
+      "ru": "страна, земля"
+    },
+    "example": "Deutschland ist ein wunderschönes Land.",
+    "note": ""
+  },
+  "Urlaub": {
+    "articles": "der",
+    "display_as": "der Urlaub, -e",
+    "level": "A2",
+    "frequency": 8.7,
+    "translation": {
+      "en": "vacation, holiday",
+      "ru": "отпуск"
+    },
+    "example": "Im Sommer mache ich drei Wochen Urlaub.",
+    "note": ""
+  },
+  "Reise": {
+    "articles": "die",
+    "display_as": "die Reise, -n",
+    "level": "A2",
+    "frequency": 8.6,
+    "translation": {
+      "en": "trip, journey",
+      "ru": "путешествие"
+    },
+    "example": "Die Reise nach Italien war fantastisch.",
+    "note": ""
+  },
+  "Koffer": {
+    "articles": "der",
+    "display_as": "der Koffer, -",
+    "level": "A2",
+    "frequency": 8.2,
+    "translation": {
+      "en": "suitcase",
+      "ru": "чемодан"
+    },
+    "example": "Ich muss noch meinen Koffer packen.",
+    "note": ""
+  },
+  "Ticket": {
+    "articles": "das",
+    "display_as": "das Ticket, -s",
+    "level": "A2",
+    "frequency": 8.4,
+    "translation": {
+      "en": "ticket",
+      "ru": "билет"
+    },
+    "example": "Das Ticket für das Konzert war teuer.",
+    "note": ""
+  },
+  "Hotel": {
+    "articles": "das",
+    "display_as": "das Hotel, -s",
+    "level": "A2",
+    "frequency": 8.5,
+    "translation": {
+      "en": "hotel",
+      "ru": "отель"
+    },
+    "example": "Wir haben ein Zimmer im Hotel gebucht.",
+    "note": ""
+  },
+  "Strand": {
+    "articles": "der",
+    "display_as": "der Strand, -e",
+    "level": "A2",
+    "frequency": 8.1,
+    "translation": {
+      "en": "beach",
+      "ru": "пляж"
+    },
+    "example": "Wir liegen am Strand und genießen die Sonne.",
+    "note": ""
+  },
+  "Meer": {
+    "articles": "das",
+    "display_as": "das Meer, -e",
+    "level": "A2",
+    "frequency": 8.4,
+    "translation": {
+      "en": "sea, ocean",
+      "ru": "море"
+    },
+    "example": "Das Meer ist heute sehr ruhig.",
+    "note": ""
+  },
+  "Berg": {
+    "articles": "der",
+    "display_as": "der Berg, -e",
+    "level": "A2",
+    "frequency": 8.5,
+    "translation": {
+      "en": "mountain",
+      "ru": "гора"
+    },
+    "example": "Im Winter gehen wir oft in die Berge.",
+    "note": ""
+  },
+  "Wald": {
+    "articles": "der",
+    "display_as": "der Wald, -er",
+    "level": "A2",
+    "frequency": 8.3,
+    "translation": {
+      "en": "forest",
+      "ru": "лес"
+    },
+    "example": "Wir machen einen Spaziergang im Wald.",
+    "note": ""
+  },
+  "Sonne": {
+    "articles": "die",
+    "display_as": "die Sonne, -n",
+    "level": "A2",
+    "frequency": 8.9,
+    "translation": {
+      "en": "sun",
+      "ru": "солнце"
+    },
+    "example": "Die Sonne scheint am blauen Himmel.",
+    "note": ""
+  },
+  "Regen": {
+    "articles": "der",
+    "display_as": "der Regen",
+    "level": "A2",
+    "frequency": 8.6,
+    "translation": {
+      "en": "rain",
+      "ru": "дождь"
+    },
+    "example": "Wegen dem Regen bleiben wir zu Hause.",
+    "note": ""
+  },
+  "Schnee": {
+    "articles": "der",
+    "display_as": "der Schnee",
+    "level": "A2",
+    "frequency": 8.3,
+    "translation": {
+      "en": "snow",
+      "ru": "снег"
+    },
+    "example": "Im Januar liegt hier viel Schnee.",
+    "note": ""
+  },
+  "Wind": {
+    "articles": "der",
+    "display_as": "der Wind, -e",
+    "level": "A2",
+    "frequency": 8.4,
+    "translation": {
+      "en": "wind",
+      "ru": "ветер"
+    },
+    "example": "Ein kalter Wind weht vom Meer.",
+    "note": ""
+  },
+  "Wetter": {
+    "articles": "das",
+    "display_as": "das Wetter",
+    "level": "A2",
+    "frequency": 9.0,
+    "translation": {
+      "en": "weather",
+      "ru": "погода"
+    },
+    "example": "Wie ist das Wetter heute in Berlin?",
+    "note": ""
+  },
+  "Kleidung": {
+    "articles": "die",
+    "display_as": "die Kleidung",
+    "level": "A2",
+    "frequency": 8.5,
+    "translation": {
+      "en": "clothing, clothes",
+      "ru": "одежда"
+    },
+    "example": "Warme Kleidung ist im Winter wichtig.",
+    "note": ""
+  },
+  "Hose": {
+    "articles": "die",
+    "display_as": "die Hose, -n",
+    "level": "A2",
+    "frequency": 8.3,
+    "translation": {
+      "en": "trousers, pants",
+      "ru": "брюки"
+    },
+    "example": "Ich kaufe mir eine neue blaue Hose.",
+    "note": ""
+  },
+  "Jacke": {
+    "articles": "die",
+    "display_as": "die Jacke, -n",
+    "level": "A2",
+    "frequency": 8.4,
+    "translation": {
+      "en": "jacket",
+      "ru": "куртка"
+    },
+    "example": "Vergiss deine Jacke nicht, es ist kalt.",
+    "note": ""
+  },
+  "Mantel": {
+    "articles": "der",
+    "display_as": "der Mantel, -",
+    "level": "A2",
+    "frequency": 8.2,
+    "translation": {
+      "en": "coat",
+      "ru": "пальто"
+    },
+    "example": "Er trägt einen eleganten schwarzen Mantel.",
+    "note": ""
+  },
+  "Schuh": {
+    "articles": "der",
+    "display_as": "der Schuh, -e",
+    "level": "A2",
+    "frequency": 8.6,
+    "translation": {
+      "en": "shoe",
+      "ru": "ботинок"
+    },
+    "example": "Meine neuen Schuhe sind sehr bequem.",
+    "note": ""
+  },
+  "Hemd": {
+    "articles": "das",
+    "display_as": "das Hemd, -en",
+    "level": "A2",
+    "frequency": 8.2,
+    "translation": {
+      "en": "shirt",
+      "ru": "рубашка"
+    },
+    "example": "Ich brauche ein weißes Hemd für die Hochzeit.",
+    "note": ""
+  },
+  "Kleid": {
+    "articles": "das",
+    "display_as": "das Kleid, -er",
+    "level": "A2",
+    "frequency": 8.1,
+    "translation": {
+      "en": "dress",
+      "ru": "платье"
+    },
+    "example": "Das rote Kleid steht ihr ausgezeichnet.",
+    "note": ""
+  },
+  "Geschenk": {
+    "articles": "das",
+    "display_as": "das Geschenk, -e",
+    "level": "A2",
+    "frequency": 8.5,
+    "translation": {
+      "en": "present, gift",
+      "ru": "подарoк"
+    },
+    "example": "Vielen Dank für das schöne Geschenk!",
+    "note": ""
+  },
+  "Party": {
+    "articles": "die",
+    "display_as": "die Party, -s",
+    "level": "A2",
+    "frequency": 8.4,
+    "translation": {
+      "en": "party",
+      "ru": "вечеринка"
+    },
+    "example": "Am Samstag veranstalten wir eine große Party.",
+    "note": ""
+  },
+  "Geburtstag": {
+    "articles": "der",
+    "display_as": "der Geburtstag, -e",
+    "level": "A2",
+    "frequency": 8.9,
+    "translation": {
+      "en": "birthday",
+      "ru": "день рождения"
+    },
+    "example": "Alles Gute zum Geburtstag!",
+    "note": ""
+  },
+  "Hochzeit": {
+    "articles": "die",
+    "display_as": "die Hochzeit, -en",
+    "level": "A2",
+    "frequency": 8.2,
+    "translation": {
+      "en": "wedding",
+      "ru": "свадьба"
+    },
+    "example": "Wir sind zu einer Hochzeit eingeladen.",
+    "note": ""
+  },
+  "Gesundheit": {
+    "articles": "die",
+    "display_as": "die Gesundheit",
+    "level": "A2",
+    "frequency": 9.1,
+    "translation": {
+      "en": "health",
+      "ru": "здоровье"
+    },
+    "example": "Gesundheit ist das Wichtigste im Leben.",
+    "note": ""
+  },
+  "Krankheit": {
+    "articles": "die",
+    "display_as": "die Krankheit, -en",
+    "level": "A2",
+    "frequency": 8.4,
+    "translation": {
+      "en": "illness, disease",
+      "ru": "болезнь"
+    },
+    "example": "Er hat die Krankheit schnell überwunden.",
+    "note": ""
+  },
+  "Krankenhaus": {
+    "articles": "das",
+    "display_as": "das Krankenhaus, -er",
+    "level": "A2",
+    "frequency": 8.5,
+    "translation": {
+      "en": "hospital",
+      "ru": "больница"
+    },
+    "example": "Sie arbeitet als Krankenschwester im Krankenhaus.",
+    "note": ""
+  },
+  "Medikament": {
+    "articles": "das",
+    "display_as": "das Medikament, -e",
+    "level": "A2",
+    "frequency": 8.3,
+    "translation": {
+      "en": "medication, drug",
+      "ru": "лекарство"
+    },
+    "example": "Nimm dieses Medikament dreimal täglich.",
+    "note": ""
+  },
+  "Schmerz": {
+    "articles": "der",
+    "display_as": "der Schmerz, -en",
+    "level": "A2",
+    "frequency": 8.5,
+    "translation": {
+      "en": "pain, ache",
+      "ru": "боль"
+    },
+    "example": "Ich habe seit gestern starke Kopfschmerzen.",
+    "note": ""
+  },
+  "Kopf": {
+    "articles": "der",
+    "display_as": "der Kopf, -e",
+    "level": "A2",
+    "frequency": 9.1,
+    "translation": {
+      "en": "head",
+      "ru": "голова"
+    },
+    "example": "Mir tut der Kopf weh.",
+    "note": ""
+  },
+  "Hand": {
+    "articles": "die",
+    "display_as": "die Hand, -e",
+    "level": "A2",
+    "frequency": 9.3,
+    "translation": {
+      "en": "hand",
+      "ru": "рука, кисть"
+    },
+    "example": "Wir geben uns zur Begrüßung die Hand.",
+    "note": ""
+  },
+  "Ohr": {
+    "articles": "das",
+    "display_as": "das Ohr, -en",
+    "level": "A2",
+    "frequency": 8.7,
+    "translation": {
+      "en": "ear",
+      "ru": "ухо"
+    },
+    "example": "Sie hält sich die Ohren zu.",
+    "note": ""
+  },
+  "Mund": {
+    "articles": "der",
+    "display_as": "der Mund, -er",
+    "level": "A2",
+    "frequency": 8.8,
+    "translation": {
+      "en": "mouth",
+      "ru": "рот"
+    },
+    "example": "Bitte mach den Mund auf, sagt der Zahnarzt.",
+    "note": ""
+  },
+  "Zahn": {
+    "articles": "der",
+    "display_as": "der Zahn, -e",
+    "level": "A2",
+    "frequency": 8.5,
+    "translation": {
+      "en": "tooth",
+      "ru": "зуб"
+    },
+    "example": "Ich muss mir nach dem Essen die Zähne putzen.",
+    "note": ""
+  },
+  "Herz": {
+    "articles": "das",
+    "display_as": "das Herz, -en",
+    "level": "A2",
+    "frequency": 9.0,
+    "translation": {
+      "en": "heart",
+      "ru": "сердце"
+    },
+    "example": "Das Herz schlägt rund um die Uhr.",
+    "note": ""
+  },
+  "Rücken": {
+    "articles": "der",
+    "display_as": "der Rücken, -",
+    "level": "A2",
+    "frequency": 8.5,
+    "translation": {
+      "en": "back",
+      "ru": "спина"
+    },
+    "example": "Nach der Gartenarbeit tut mir der Rücken weh.",
+    "note": ""
+  },
+  "Fuß": {
+    "articles": "der",
+    "display_as": "der Fuß, -e",
+    "level": "A2",
+    "frequency": 8.9,
+    "translation": {
+      "en": "foot",
+      "ru": "стопа"
+    },
+    "example": "Wir gehen zu Fuß zum Bahnhof.",
+    "note": ""
+  },
+  "Erfolg": {
+    "articles": "der",
+    "display_as": "der Erfolg, -e",
+    "level": "B2",
+    "frequency": 8.9,
+    "translation": {
+      "en": "success",
+      "ru": "успех"
+    },
+    "example": "Der Film war ein weltweiter kommerzieller Erfolg.",
+    "note": ""
+  },
+  "Erfahrung": {
+    "articles": "die",
+    "display_as": "die Erfahrung, -en",
+    "level": "B1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "experience",
+      "ru": "опыт"
+    },
+    "example": "Sie hat langjährige Erfahrung in diesem Beruf.",
+    "note": ""
+  },
+  "Entscheidung": {
+    "articles": "die",
+    "display_as": "die Entscheidung, -en",
+    "level": "B1",
+    "frequency": 8.7,
+    "translation": {
+      "en": "decision",
+      "ru": "решение"
+    },
+    "example": "Das ist eine sehr wichtige Entscheidung.",
+    "note": ""
+  },
+  "Entwicklung": {
+    "articles": "die",
+    "display_as": "die Entwicklung, -en",
+    "level": "B1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "development",
+      "ru": "развитие"
+    },
+    "example": "Die technologische Entwicklung schreitet schnell voran.",
+    "note": ""
+  },
+  "Möglichkeit": {
+    "articles": "die",
+    "display_as": "die Möglichkeit, -en",
+    "level": "B1",
+    "frequency": 9.0,
+    "translation": {
+      "en": "possibility, opportunity",
+      "ru": "возможность"
+    },
+    "example": "Wir haben die Möglichkeit, ins Ausland zu gehen.",
+    "note": ""
+  },
+  "Fähigkeit": {
+    "articles": "die",
+    "display_as": "die Fähigkeit, -en",
+    "level": "B1",
+    "frequency": 8.4,
+    "translation": {
+      "en": "ability, skill",
+      "ru": "способность"
+    },
+    "example": "Sprachliche Fähigkeiten sind im Beruf sehr gefragt.",
+    "note": ""
+  },
+  "Gesellschaft": {
+    "articles": "die",
+    "display_as": "die Gesellschaft, -en",
+    "level": "B1",
+    "frequency": 9.1,
+    "translation": {
+      "en": "society, company",
+      "ru": "общество, компания"
+    },
+    "example": "Wir leben in einer modernen Gesellschaft.",
+    "note": ""
+  },
+  "Wirtschaft": {
+    "articles": "die",
+    "display_as": "die Wirtschaft, -en",
+    "level": "B1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "economy",
+      "ru": "экономика"
+    },
+    "example": "Die globale Wirtschaft wächst kontinuierlich.",
+    "note": ""
+  },
+  "Zukunft": {
+    "articles": "die",
+    "display_as": "die Zukunft",
+    "level": "B1",
+    "frequency": 9.1,
+    "translation": {
+      "en": "future",
+      "ru": "будущее"
+    },
+    "example": "Niemand kann die Zukunft genau vorhersagen.",
+    "note": ""
+  },
+  "Vergangenheit": {
+    "articles": "die",
+    "display_as": "die Vergangenheit",
+    "level": "B1",
+    "frequency": 8.7,
+    "translation": {
+      "en": "past",
+      "ru": "прошлое"
+    },
+    "example": "Aus der Vergangenheit können wir viel lernen.",
+    "note": ""
+  },
+  "Gegenwart": {
+    "articles": "die",
+    "display_as": "die Gegenwart",
+    "level": "B1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "present (time)",
+      "ru": "настоящее (время)"
+    },
+    "example": "In der Gegenwart leben ist wichtig für die Achtsamkeit.",
+    "note": ""
+  },
+  "Regierung": {
+    "articles": "die",
+    "display_as": "die Regierung, -en",
+    "level": "B1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "government",
+      "ru": "правительство"
+    },
+    "example": "Die Regierung hat ein neues Gesetz beschlossen.",
+    "note": ""
+  },
+  "Gesetz": {
+    "articles": "das",
+    "display_as": "das Gesetz, -e",
+    "level": "B1",
+    "frequency": 8.7,
+    "translation": {
+      "en": "law",
+      "ru": "закон"
+    },
+    "example": "Alle Bürger müssen sich an die Gesetze halten.",
+    "note": ""
+  },
+  "Recht": {
+    "articles": "das",
+    "display_as": "das Recht, -e",
+    "level": "B1",
+    "frequency": 9.0,
+    "translation": {
+      "en": "right, law",
+      "ru": "право"
+    },
+    "example": "Jeder Mensch hat das Recht auf freie Meinungsäußerung.",
+    "note": ""
+  },
+  "Freiheit": {
+    "articles": "die",
+    "display_as": "die Freiheit, -en",
+    "level": "B1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "freedom, liberty",
+      "ru": "свобода"
+    },
+    "example": "Freiheit und Demokratie sind Grundwerte unserer Gesellschaft.",
+    "note": ""
+  },
+  "Sicherheit": {
+    "articles": "die",
+    "display_as": "die Sicherheit, -en",
+    "level": "B1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "security, safety",
+      "ru": "безопасность"
+    },
+    "example": "Die Sicherheit der Passagiere hat höchste Priorität.",
+    "note": ""
+  },
+  "Gefahr": {
+    "articles": "die",
+    "display_as": "die Gefahr, -en",
+    "level": "B1",
+    "frequency": 8.6,
+    "translation": {
+      "en": "danger, hazard",
+      "ru": "опасность"
+    },
+    "example": "In den Bergen besteht bei Nebel große Gefahr.",
+    "note": ""
+  },
+  "Umwelt": {
+    "articles": "die",
+    "display_as": "die Umwelt",
+    "level": "B1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "environment",
+      "ru": "окружающая среда"
+    },
+    "example": "Der Schutz der Umwelt geht uns alle an.",
+    "note": ""
+  },
+  "Klima": {
+    "articles": "das",
+    "display_as": "das Klima, -s",
+    "level": "B1",
+    "frequency": 8.7,
+    "translation": {
+      "en": "climate",
+      "ru": "климат"
+    },
+    "example": "Das Klima verändert sich auf der ganzen Welt.",
+    "note": ""
+  },
+  "Energie": {
+    "articles": "die",
+    "display_as": "die Energie, -n",
+    "level": "B1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "energy",
+      "ru": "энергия"
+    },
+    "example": "Erneuerbare Energien werden immer wichtiger.",
+    "note": ""
+  },
+  "Wissenschaft": {
+    "articles": "die",
+    "display_as": "die Wissenschaft, -en",
+    "level": "B1",
+    "frequency": 8.6,
+    "translation": {
+      "en": "science",
+      "ru": "наука"
+    },
+    "example": "Die Wissenschaft erforscht neue Heilmittel.",
+    "note": ""
+  },
+  "Forschung": {
+    "articles": "die",
+    "display_as": "die Forschung, -en",
+    "level": "B1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "research",
+      "ru": "исследование"
+    },
+    "example": "Viel Geld wird in die medizinische Forschung investiert.",
+    "note": ""
+  },
+  "Technik": {
+    "articles": "die",
+    "display_as": "die Technik, -en",
+    "level": "B1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "technology, technique",
+      "ru": "техника, технология"
+    },
+    "example": "Moderne Technik erleichtert unseren Alltag.",
+    "note": ""
+  },
+  "Internet": {
+    "articles": "das",
+    "display_as": "das Internet",
+    "level": "B1",
+    "frequency": 9.4,
+    "translation": {
+      "en": "internet",
+      "ru": "интернет"
+    },
+    "example": "Im Internet findet man schnell Informationen.",
+    "note": ""
+  },
+  "Programm": {
+    "articles": "das",
+    "display_as": "das Programm, -e",
+    "level": "B1",
+    "frequency": 8.7,
+    "translation": {
+      "en": "program",
+      "ru": "программа"
+    },
+    "example": "Welches Programm läuft heute Abend im Fernsehen?",
+    "note": ""
+  },
+  "Ziel": {
+    "articles": "das",
+    "display_as": "das Ziel, -e",
+    "level": "B1",
+    "frequency": 9.1,
+    "translation": {
+      "en": "goal, target, destination",
+      "ru": "цель"
+    },
+    "example": "Sie hat ihr Ziel mit harter Arbeit erreicht.",
+    "note": ""
+  },
+  "Lösung": {
+    "articles": "die",
+    "display_as": "die Lösung, -en",
+    "level": "B1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "solution",
+      "ru": "решение"
+    },
+    "example": "Wir müssen gemeinsam eine Lösung für das Problem finden.",
+    "note": ""
+  },
+  "Problem": {
+    "articles": "das",
+    "display_as": "das Problem, -e",
+    "level": "B1",
+    "frequency": 9.3,
+    "translation": {
+      "en": "problem",
+      "ru": "проблема"
+    },
+    "example": "Kein Problem, ich helfe dir gerne!",
+    "note": ""
+  },
+  "Grund": {
+    "articles": "der",
+    "display_as": "der Grund, -e",
+    "level": "B1",
+    "frequency": 9.2,
+    "translation": {
+      "en": "reason, cause",
+      "ru": "причина"
+    },
+    "example": "Was ist der Grund für deine Verspätung?",
+    "note": ""
+  },
+  "Folge": {
+    "articles": "die",
+    "display_as": "die Folge, -n",
+    "level": "B1",
+    "frequency": 8.7,
+    "translation": {
+      "en": "consequence, result, episode",
+      "ru": "последствие, серия"
+    },
+    "example": "Das kann schwere Folgen für die Wirtschaft haben.",
+    "note": ""
+  },
+  "Vorteil": {
+    "articles": "der",
+    "display_as": "der Vorteil, -e",
+    "level": "B1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "advantage, benefit",
+      "ru": "преимущество"
+    },
+    "example": "Der große Vorteil der Bahn ist, dass man lesen kann.",
+    "note": ""
+  },
+  "Nachteil": {
+    "articles": "der",
+    "display_as": "der Nachteil, -e",
+    "level": "B1",
+    "frequency": 8.7,
+    "translation": {
+      "en": "disadvantage, drawback",
+      "ru": "недостаток"
+    },
+    "example": "Ein Nachteil des Lebens in der Stadt ist der Lärm.",
+    "note": ""
+  },
+  "Unterschied": {
+    "articles": "der",
+    "display_as": "der Unterschied, -e",
+    "level": "B1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "difference",
+      "ru": "разница"
+    },
+    "example": "Gibt es einen Unterschied zwischen den beiden Modellen?",
+    "note": ""
+  },
+  "Beziehung": {
+    "articles": "die",
+    "display_as": "die Beziehung, -en",
+    "level": "B1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "relationship, connection",
+      "ru": "отношение, связь"
+    },
+    "example": "Sie haben eine sehr gute Beziehung zu ihren Nachbarn.",
+    "note": ""
+  },
+  "Gefühl": {
+    "articles": "das",
+    "display_as": "das Gefühl, -e",
+    "level": "B1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "feeling, emotion",
+      "ru": "чувство"
+    },
+    "example": "Ich habe das Gefühl, dass heute ein guter Tag wird.",
+    "note": ""
+  },
+  "Liebe": {
+    "articles": "die",
+    "display_as": "die Liebe",
+    "level": "B1",
+    "frequency": 9.1,
+    "translation": {
+      "en": "love",
+      "ru": "любовь"
+    },
+    "example": "Aus Liebe hat er ihr ein Lied geschrieben.",
+    "note": ""
+  },
+  "Angst": {
+    "articles": "die",
+    "display_as": "die Angst, -e",
+    "level": "B1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "fear, anxiety",
+      "ru": "страх"
+    },
+    "example": "Viele Menschen haben Angst vor Spinnen oder Höhen.",
+    "note": ""
+  },
+  "Freude": {
+    "articles": "die",
+    "display_as": "die Freude, -n",
+    "level": "B1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "joy, pleasure",
+      "ru": "радость"
+    },
+    "example": "Mit großer Freude nehme ich Ihre Einladung an.",
+    "note": ""
+  },
+  "Hoffnung": {
+    "articles": "die",
+    "display_as": "die Hoffnung, -en",
+    "level": "B1",
+    "frequency": 8.7,
+    "translation": {
+      "en": "hope",
+      "ru": "надежда"
+    },
+    "example": "Wir geben die Hoffnung auf eine friedliche Zukunft nicht auf.",
+    "note": ""
+  },
+  "Gedanke": {
+    "articles": "der",
+    "display_as": "der Gedanke, -n",
+    "level": "B1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "thought, idea",
+      "ru": "мысль"
+    },
+    "example": "Dieser Gedanke kam mir ganz spontan.",
+    "note": ""
+  },
+  "Meinung": {
+    "articles": "die",
+    "display_as": "die Meinung, -en",
+    "level": "B1",
+    "frequency": 9.0,
+    "translation": {
+      "en": "opinion, view",
+      "ru": "мнение"
+    },
+    "example": "Meiner Meinung nach ist dieses Projekt sehr sinnvoll.",
+    "note": ""
+  },
+  "Idee": {
+    "articles": "die",
+    "display_as": "die Idee, -n",
+    "level": "B1",
+    "frequency": 9.1,
+    "translation": {
+      "en": "idea",
+      "ru": "идея"
+    },
+    "example": "Das ist wirklich eine brillante Idee!",
+    "note": ""
+  },
+  "Wissen": {
+    "articles": "das",
+    "display_as": "das Wissen",
+    "level": "B1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "knowledge",
+      "ru": "знание"
+    },
+    "example": "Wissen ist Macht, lehrte schon Francis Bacon.",
+    "note": ""
+  },
+  "Bildung": {
+    "articles": "die",
+    "display_as": "die Bildung",
+    "level": "B1",
+    "frequency": 8.9,
+    "translation": {
+      "en": "education, formation",
+      "ru": "образование"
+    },
+    "example": "Gute Bildung ist der Schlüssel zu beruflichem Erfolg.",
+    "note": ""
+  },
+  "Kultur": {
+    "articles": "die",
+    "display_as": "die Kultur, -en",
+    "level": "B1",
+    "frequency": 8.8,
+    "translation": {
+      "en": "culture",
+      "ru": "культура"
+    },
+    "example": "Jedes Land hat seine eigene Geschichte und Kultur.",
+    "note": ""
+  },
+  "Kunst": {
+    "articles": "die",
+    "display_as": "die Kunst, -e",
+    "level": "B1",
+    "frequency": 8.6,
+    "translation": {
+      "en": "art",
+      "ru": "искусство"
+    },
+    "example": "Sie interessiert sich sehr für moderne Kunst.",
+    "note": ""
+  },
+  "Musik": {
+    "articles": "die",
+    "display_as": "die Musik",
+    "level": "B1",
+    "frequency": 9.2,
+    "translation": {
+      "en": "music",
+      "ru": "музыка"
+    },
+    "example": "Welche Musik hörst du am liebsten beim Sport?",
+    "note": ""
+  },
+  "Theater": {
+    "articles": "das",
+    "display_as": "das Theater, -",
+    "level": "B1",
+    "frequency": 8.4,
+    "translation": {
+      "en": "theater",
+      "ru": "театр"
+    },
+    "example": "Wir gehen am Wochenende ins Theater.",
+    "note": ""
+  },
+  "Voraussetzung": {
+    "articles": "die",
+    "display_as": "die Voraussetzung, -en",
+    "level": "B2",
+    "frequency": 8.5,
+    "translation": {
+      "en": "prerequisite, requirement",
+      "ru": "prerequisite, предпосылка / условие"
+    },
+    "example": "Gute Deutschkenntnisse sind Voraussetzung für dieses Studium.",
+    "note": ""
+  },
+  "Zusammenhang": {
+    "articles": "der",
+    "display_as": "der Zusammenhang, -e",
+    "level": "B2",
+    "frequency": 8.7,
+    "translation": {
+      "en": "connection, context",
+      "ru": "связь, контекст"
+    },
+    "example": "In diesem Zusammenhang müssen wir auch die Kosten beachten.",
+    "note": ""
+  },
+  "Auswirkung": {
+    "articles": "die",
+    "display_as": "die Auswirkung, -en",
+    "level": "B2",
+    "frequency": 8.6,
+    "translation": {
+      "en": "impact, effect, consequence",
+      "ru": "воздействие, последствие"
+    },
+    "example": "Die Reformen hatten positive Auswirkungen auf den Arbeitsmarkt.",
+    "note": ""
+  },
+  "Maßnahme": {
+    "articles": "die",
+    "display_as": "die Maßnahme, -n",
+    "level": "B2",
+    "frequency": 8.7,
+    "translation": {
+      "en": "measure, step, action",
+      "ru": "мера, мероприятие"
+    },
+    "example": "Die Regierung ergreift Maßnahmen zur Bekämpfung der Inflation.",
+    "note": ""
+  },
+  "Herausforderung": {
+    "articles": "die",
+    "display_as": "die Herausforderung, -en",
+    "level": "B2",
+    "frequency": 8.6,
+    "translation": {
+      "en": "challenge",
+      "ru": "вызов, сложная задача"
+    },
+    "example": "Das neue Projekt ist eine große berufliche Herausforderung.",
+    "note": ""
+  },
+  "Verantwortung": {
+    "articles": "die",
+    "display_as": "die Verantwortung, -en",
+    "level": "B2",
+    "frequency": 8.8,
+    "translation": {
+      "en": "responsibility",
+      "ru": "ответственность"
+    },
+    "example": "Als Abteilungsleiter trägt er viel Verantwortung.",
+    "note": ""
+  },
+  "Einfluss": {
+    "articles": "der",
+    "display_as": "der Einfluss, -e",
+    "level": "B2",
+    "frequency": 8.8,
+    "translation": {
+      "en": "influence, impact",
+      "ru": "влияние"
+    },
+    "example": "Die Werbung hat großen Einfluss auf das Kaufverhalten.",
+    "note": ""
+  },
+  "Bedeutung": {
+    "articles": "die",
+    "display_as": "die Bedeutung, -en",
+    "level": "B2",
+    "frequency": 9.1,
+    "translation": {
+      "en": "meaning, importance, significance",
+      "ru": "значение, важность"
+    },
+    "example": "Was ist die Bedeutung dieses Wortes in diesem Kontext?",
+    "note": ""
+  },
+  "Anspruch": {
+    "articles": "der",
+    "display_as": "der Anspruch, -e",
+    "level": "B2",
+    "frequency": 8.5,
+    "translation": {
+      "en": "claim, demand, entitlement",
+      "ru": "претензия, требование, право"
+    },
+    "example": "Er hat Anspruch auf 30 Tage bezahlten Urlaub.",
+    "note": ""
+  },
+  "Verfügung": {
+    "articles": "die",
+    "display_as": "die Verfügung, -en",
+    "level": "B2",
+    "frequency": 8.6,
+    "translation": {
+      "en": "disposal, decree",
+      "ru": "распоряжение, наличие"
+    },
+    "example": "Für diese Aufgabe stehen uns ausreichende Mittel zur Verfügung.",
+    "note": ""
+  },
+  "Umfang": {
+    "articles": "der",
+    "display_as": "der Umfang, -e",
+    "level": "B2",
+    "frequency": 8.4,
+    "translation": {
+      "en": "scope, extent, volume",
+      "ru": "объем, масштаб"
+    },
+    "example": "Der Umfang der Bauarbeiten ist größer als geplant.",
+    "note": ""
+  },
+  "Verlauf": {
+    "articles": "der",
+    "display_as": "der Verlauf, -e",
+    "level": "B2",
+    "frequency": 8.5,
+    "translation": {
+      "en": "course, progress",
+      "ru": "ход, течение (процесса)"
+    },
+    "example": "Im Verlauf des Gesprächs klärten sich alle Fragen.",
+    "note": ""
+  },
+  "Zweck": {
+    "articles": "der",
+    "display_as": "der Zweck, -e",
+    "level": "B2",
+    "frequency": 8.6,
+    "translation": {
+      "en": "purpose, aim",
+      "ru": "цель, назначение"
+    },
+    "example": "Welchen Zweck verfolgt diese neue Regelung?",
+    "note": ""
+  },
+  "Absicht": {
+    "articles": "die",
+    "display_as": "die Absicht, -en",
+    "level": "B2",
+    "frequency": 8.5,
+    "translation": {
+      "en": "intention, purpose",
+      "ru": "намерение"
+    },
+    "example": "Es war nicht meine Absicht, dich zu kränken.",
+    "note": ""
+  },
+  "Verhältnis": {
+    "articles": "das",
+    "display_as": "das Verhältnis, -se",
+    "level": "B2",
+    "frequency": 8.7,
+    "translation": {
+      "en": "relationship, ratio, condition",
+      "ru": "отношение, соотношение"
+    },
+    "example": "Das Verhältnis von Preis und Leistung ist hier sehr gut.",
+    "note": ""
+  },
+  "Bedingung": {
+    "articles": "die",
+    "display_as": "die Bedingung, -en",
+    "level": "B2",
+    "frequency": 8.8,
+    "translation": {
+      "en": "condition, term",
+      "ru": "условие"
+    },
+    "example": "Unter diesen Bedingungen können wir den Vertrag unterschreiben.",
+    "note": ""
+  },
+  "Umstand": {
+    "articles": "der",
+    "display_as": "der Umstand, -e",
+    "level": "B2",
+    "frequency": 8.4,
+    "translation": {
+      "en": "circumstance, fact",
+      "ru": "обстоятельство"
+    },
+    "example": "Aufgrund der besonderen Umstände fällt das Fest aus.",
+    "note": ""
+  },
+  "Ereignis": {
+    "articles": "das",
+    "display_as": "das Ereignis, -se",
+    "level": "B2",
+    "frequency": 8.6,
+    "translation": {
+      "en": "event, occurrence",
+      "ru": "событие, происшествие"
+    },
+    "example": "Die Olympischen Spiele sind ein großes internationales Ereignis.",
+    "note": ""
+  },
+  "Erkenntnis": {
+    "articles": "die",
+    "display_as": "die Erkenntnis, -se",
+    "level": "B2",
+    "frequency": 8.5,
+    "translation": {
+      "en": "insight, realization, finding",
+      "ru": "познание, осознание, вывод"
+    },
+    "example": "Die wissenschaftliche Erkenntnis half bei der Entwicklung neuer Therapien.",
+    "note": ""
+  },
+  "Bewegung": {
+    "articles": "die",
+    "display_as": "die Bewegung, -en",
+    "level": "B2",
+    "frequency": 8.8,
+    "translation": {
+      "en": "movement, motion",
+      "ru": "движение"
+    },
+    "example": "Regelmäßige körperliche Bewegung ist wichtig für das Herz.",
+    "note": ""
+  },
+  "Verhalten": {
+    "articles": "das",
+    "display_as": "das Verhalten",
+    "level": "B2",
+    "frequency": 8.9,
+    "translation": {
+      "en": "behavior, conduct",
+      "ru": "поведение"
+    },
+    "example": "Sein professionelles Verhalten in der Krise wurde gelobt.",
+    "note": ""
+  },
+  "Eigenschaft": {
+    "articles": "die",
+    "display_as": "die Eigenschaft, -en",
+    "level": "B2",
+    "frequency": 8.5,
+    "translation": {
+      "en": "property, characteristic, quality",
+      "ru": "свойство, качество"
+    },
+    "example": "Geduld ist eine wichtige Eigenschaft für Lehrkräfte.",
+    "note": ""
+  },
+  "Forderung": {
+    "articles": "die",
+    "display_as": "die Forderung, -en",
+    "level": "B2",
+    "frequency": 8.6,
+    "translation": {
+      "en": "demand, claim, requirement",
+      "ru": "требование"
+    },
+    "example": "Die Gewerkschaft stellt hohe Forderungen für die Tarifrunde.",
+    "note": ""
+  },
+  "Leistung": {
+    "articles": "die",
+    "display_as": "die Leistung, -en",
+    "level": "B2",
+    "frequency": 8.9,
+    "translation": {
+      "en": "performance, achievement, service",
+      "ru": "достижение, производительность, услуга"
+    },
+    "example": "Für diese herausragende Leistung erhielt er eine Auszeichnung.",
+    "note": ""
+  },
+  "Versuch": {
+    "articles": "der",
+    "display_as": "der Versuch, -e",
+    "level": "B2",
+    "frequency": 8.8,
+    "translation": {
+      "en": "attempt, trial, experiment",
+      "ru": "попытка, опыт"
+    },
+    "example": "Beim zweiten Versuch hat sie die Fahrprüfung bestanden.",
+    "note": ""
+  },
+  "Auseinandersetzung": {
+    "articles": "die",
+    "display_as": "die Auseinandersetzung, -en",
+    "level": "C1",
+    "frequency": 8.3,
+    "translation": {
+      "en": "debate, argument, critical engagement",
+      "ru": "дискуссия, спор, рассмотрение"
+    },
+    "example": "Die wissenschaftliche Auseinandersetzung mit dem Thema ist komplex.",
+    "note": ""
+  },
+  "Gewährleistung": {
+    "articles": "die",
+    "display_as": "die Gewährleistung, -en",
+    "level": "C1",
+    "frequency": 8.1,
+    "translation": {
+      "en": "warranty, guarantee, ensuring",
+      "ru": "гарантия, обеспечение"
+    },
+    "example": "Die Gewährleistung der Datensicherheit erfordert ständige Updates.",
+    "note": ""
+  },
+  "Beeinträchtigung": {
+    "articles": "die",
+    "display_as": "die Beeinträchtigung, -en",
+    "level": "C1",
+    "frequency": 8.0,
+    "translation": {
+      "en": "impairment, interference, restriction",
+      "ru": "ущемление, нарушение, препятствие"
+    },
+    "example": "Lärm kann zu einer erheblichen Beeinträchtigung der Konzentration führen.",
+    "note": ""
+  },
+  "Angelegenheit": {
+    "articles": "die",
+    "display_as": "die Angelegenheit, -en",
+    "level": "C1",
+    "frequency": 8.5,
+    "translation": {
+      "en": "matter, affair, concern",
+      "ru": "дело, вопрос"
+    },
+    "example": "Das ist eine private Angelegenheit, die niemanden etwas angeht.",
+    "note": ""
+  },
+  "Begebenheit": {
+    "articles": "die",
+    "display_as": "die Begebenheit, -en",
+    "level": "C1",
+    "frequency": 7.8,
+    "translation": {
+      "en": "incident, event, occurrence",
+      "ru": "происшествие, событие"
+    },
+    "example": "Der Roman basiert auf einer wahren Begebenheit aus dem 19. Jahrhundert.",
+    "note": ""
+  },
+  "Kontroverse": {
+    "articles": "die",
+    "display_as": "die Kontroverse, -n",
+    "level": "C1",
+    "frequency": 8.2,
+    "translation": {
+      "en": "controversy, dispute",
+      "ru": "противоречие, полемика"
+    },
+    "example": "Die neue Architektur des Museums löste eine öffentliche Kontroverse aus.",
+    "note": ""
+  },
+  "Errungenschaft": {
+    "articles": "die",
+    "display_as": "die Errungenschaft, -en",
+    "level": "C1",
+    "frequency": 8.0,
+    "translation": {
+      "en": "achievement, accomplishment",
+      "ru": "достижение, завоевание"
+    },
+    "example": "Die Pressefreiheit ist eine wichtige Errungenschaft unserer Demokratie.",
+    "note": ""
+  },
+  "Willkür": {
+    "articles": "die",
+    "display_as": "die Willkür",
+    "level": "C1",
+    "frequency": 7.9,
+    "translation": {
+      "en": "arbitrariness, despotism",
+      "ru": "произвол, своенравие"
+    },
+    "example": "Gesetze schützen die Bürger vor staatlicher Willkür.",
+    "note": ""
+  },
+  "Vorbehalt": {
+    "articles": "der",
+    "display_as": "der Vorbehalt, -e",
+    "level": "C1",
+    "frequency": 8.3,
+    "translation": {
+      "en": "reservation, qualification, proviso",
+      "ru": "оговорка, условие, предубеждение"
+    },
+    "example": "Ich stimme dem Vorschlag zu, allerdings mit einigen Vorbehalten.",
+    "note": ""
+  },
+  "Vergütung": {
+    "articles": "die",
+    "display_as": "die Vergütung, -en",
+    "level": "C1",
+    "frequency": 8.2,
+    "translation": {
+      "en": "remuneration, compensation, pay",
+      "ru": "вознаграждение, оплата"
+    },
+    "example": "Die angemessene Vergütung von Pflegekräften wird aktuell debattiert.",
+    "note": ""
+  },
+  "Bestreben": {
+    "articles": "das",
+    "display_as": "das Bestreben",
+    "level": "C1",
+    "frequency": 8.1,
+    "translation": {
+      "en": "effort, endeavor, aspiration",
+      "ru": "стремление, усилие"
+    },
+    "example": "Es ist unser ständiges Bestreben, den Service weiter zu verbessern.",
+    "note": ""
+  },
+  "Gleichgewicht": {
+    "articles": "das",
+    "display_as": "das Gleichgewicht, -e",
+    "level": "C1",
+    "frequency": 8.4,
+    "translation": {
+      "en": "equilibrium, balance",
+      "ru": "равновесие, баланс"
+    },
+    "example": "Ökosysteme reagieren empfindlich auf Störungen des natürlichen Gleichgewichts.",
+    "note": ""
+  }
+}

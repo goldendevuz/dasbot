@@ -70,6 +70,10 @@ de:
           hint: Welche Wörterliste möchtest du verwenden?
           buttons:
             a1: Nur A1
+            a2: Nur A2
+            b1: Nur B1
+            b2: Nur B2
+            c1: Nur C1
             default: Dasbots vollständiges Wörterbuch
         delete_account:
           hint: Bist du sicher? Dies wird alle deine Daten dauerhaft löschen, einschließlich deiner Punktzahlen und Statistiken. Diese Aktion kann nicht rückgängig gemacht werden.
@@ -84,6 +88,10 @@ de:
       quiz_mode_review: Der Quizmodus ist auf "Maximale Wiederholung" eingestellt. Die Wiederholung hat Priorität vor neuen Wörtern.
       hint_language_set: "Ok, Sprache für Hinweise: %{pref}"
       dictionary_a1: "A1-Wörterliste ausgewählt. Starte das Quiz mit /start neu."
+      dictionary_a2: "A2-Wörterliste ausgewählt. Starte das Quiz mit /start neu."
+      dictionary_b1: "B1-Wörterliste ausgewählt. Starte das Quiz mit /start neu."
+      dictionary_b2: "B2-Wörterliste ausgewählt. Starte das Quiz mit /start neu."
+      dictionary_c1: "C1-Wörterliste ausgewählt. Starte das Quiz mit /start neu."
       dictionary_default: "Vollständiges Wörterbuch ausgewählt. Starte das Quiz mit /start neu."
       delete_account_deleted: "Deine Daten wurden gelöscht. Du kannst jederzeit neu beginnen, indem du /start sendest."
       delete_account_cancelled: "Datenlöschung abgebrochen."

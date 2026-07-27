@@ -2,26 +2,37 @@ name: dasbot
 services:
   dasbot:
     container_name: dasbot
-    image: wetterkrank/dasbot:latest
+    build: .
+    image: dasbot:local
     restart: unless-stopped
     env_file: .env
+    environment:
+      DYNACONF_DB_ADDRESS: "postgresql://dasbot:dasbot@postgres:5432/dasbot"
     ports:
       - 127.0.0.1:8080:8080
-  mongodb:
-    container_name: mongodb
-    image: mongo:8.2.6
-    restart: unless-stopped
-    env_file: .env.mongo
-    ports:
-      - 127.0.0.1:27017:27017
     volumes:
-      - mongodb_data:/data/db
+      - .:/usr/src/app
+    depends_on:
+      postgres:
+        condition: service_healthy
+  postgres:
+    container_name: postgres
+    image: postgres:18-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: dasbot
+      POSTGRES_USER: dasbot
+      POSTGRES_PASSWORD: dasbot
+    ports:
+      - 127.0.0.1:5432:5432
+    volumes:
+      - postgres18_data:/var/lib/postgresql
     healthcheck:
-      test: echo 'db.runCommand("ping").ok' | mongosh --quiet
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
+      test: ["CMD-SHELL", "pg_isready -U dasbot -d dasbot"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
 volumes:
-  mongodb_data:
-    name: mongodb_data
+  postgres18_data:
+    name: postgres18_data

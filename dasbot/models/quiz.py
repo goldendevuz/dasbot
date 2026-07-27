@@ -1,12 +1,11 @@
 import logging
-
 from datetime import datetime, timedelta
 from random import shuffle
 from typing import Tuple
 from enum import Enum
 from pytz import timezone
 
-from marshmallow import Schema, fields, EXCLUDE, post_load
+from rest_framework import serializers
 
 from dasbot.models.dictionary import Dictionary
 from dasbot.types import Scores, Words, Cards
@@ -187,22 +186,72 @@ class Quiz(object):
         self.scores[self.question] = new_val
 
 
-class QuizSchema(Schema):
-    class Meta:
-        unknown = EXCLUDE  # Skips unknown fields on deserialization
+class QuizSerializer(serializers.Serializer):
+    position = serializers.IntegerField(required=False, default=0)
+    correctly = serializers.IntegerField(required=False, default=0)
+    active = serializers.BooleanField(required=False, default=False)
+    cards = serializers.ListField(
+        child=serializers.DictField(child=serializers.CharField(allow_null=True)),
+        required=False,
+        default=list
+    )
+    scores = serializers.DictField(
+        child=serializers.ListField(),
+        required=False,
+        default=dict
+    )
 
-    position = fields.Integer()
-    correctly = fields.Integer()
-    active = fields.Boolean(load_default=False)
-    cards = fields.List(fields.Dict(keys=fields.String(),
-                        values=fields.String(allow_none=True)))
-    scores = fields.Dict(keys=fields.String(),
-                         values=fields.Tuple((fields.Integer(), fields.Raw())))
+    def to_internal_value(self, data):
+        known_fields = {field: data[field] for field in self.fields if field in data}
+        res = super().to_internal_value(known_fields)
+        if 'scores' in res and isinstance(res['scores'], dict):
+            parsed_scores = {}
+            for k, v in res['scores'].items():
+                if isinstance(v, (list, tuple)) and len(v) == 2:
+                    dt = v[1]
+                    if isinstance(dt, str):
+                        try:
+                            dt = datetime.fromisoformat(dt)
+                        except ValueError:
+                            pass
+                    parsed_scores[k] = (int(v[0]), dt)
+                else:
+                    parsed_scores[k] = v
+            res['scores'] = parsed_scores
+        return res
 
-    @post_load
-    def get_quiz(self, data, **kwargs):
-        return Quiz(**data)
+    def to_representation(self, instance):
+        res = super().to_representation(instance)
+        if 'scores' in res and isinstance(res['scores'], dict):
+            ser_scores = {}
+            for k, v in res['scores'].items():
+                if isinstance(v, (list, tuple)) and len(v) == 2:
+                    dt = v[1]
+                    if isinstance(dt, datetime):
+                        dt = dt.isoformat()
+                    ser_scores[k] = [v[0], dt]
+                else:
+                    ser_scores[k] = v
+            res['scores'] = ser_scores
+        return res
 
+    def create(self, validated_data):
+        return Quiz(**validated_data)
+
+    def update(self, instance, validated_data):
+        return self.create(validated_data)
+
+    def dump(self, instance):
+        return QuizSerializer(instance).data
+
+    def load(self, data, **kwargs):
+        serializer = QuizSerializer(data=data)
+        serializer.is_valid(raise_exception=True)
+        return serializer.save()
+
+
+# Backward compatibility alias
+QuizSchema = QuizSerializer
 
 if __name__ == "__main__":
     pass
