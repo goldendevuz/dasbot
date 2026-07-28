@@ -46,6 +46,19 @@ dp.message.middleware(I18nMiddleware())
 dp.callback_query.middleware(I18nMiddleware())
 
 db = Database(settings).connect()
+
+if not db["dictionary_v3"].objects.exists():
+    log.info("Dictionary is empty. Auto-populating from file...")
+    dict_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dictionary", "dictionary_v3.json")
+    if not os.path.exists(dict_file_path):
+        dict_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dictionary", "dictionary_v3.example.json")
+    
+    if os.path.exists(dict_file_path):
+        from scripts.import_dictionary import import_dictionary
+        import_dictionary(dict_file_path)
+    else:
+        log.error("No dictionary JSON found to auto-populate DB.")
+
 bot = Bot(
     settings.TELEGRAM_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML)
 )
